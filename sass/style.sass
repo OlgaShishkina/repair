@@ -1,18 +1,23 @@
 @import '_var.sass'
-
-@import '_mixins.sass'  
-
+@import '_mixins.sass' 
+@import '_interface.sass'
 @import '_normalize.scss'
-
 @import '_fonts.scss'  
-
-@import '_interface.sass' 
-
 @import '_header.sass'
+@import '_main.sass'
+@import '_feedback.sass'
+
+*, *:before ,*:after 
+  box-sizing: border-box
 
 body
   font-family: 'Museo Sans Light', sans-serif 
   color: $text-color
+
 .container 
   width: 1170px  
   margin: 0 auto
+
+img 
+  max-width: 100%
+  

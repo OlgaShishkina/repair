@@ -1,0 +1,53 @@
+.main
+  background-color: $light-bg-color
+  padding: 60px 0
+  &-wrap
+    display: flex
+  &-text /* flex-basis: 50%  for place text in 50% of a space of .main */ 
+    flex-basis: 50%   
+    &__title
+      color: #333333
+      font-size: 41px
+      line-height: 55px
+      +bold
+      margin-bottom: 50px
+      margin-top: 20px
+      span  /* we add to span value "display block" for start on new line*/
+        font-size: 20px
+        display: block
+        margin-top: 20px
+  &-img /* flex-basis: 50%  for place img in 50% of a space of .main */ 
+    flex-basis: 50%  
+  &-advantages
+    display: flex
+    flex-direction: column
+    max-width: 330px
+    &__item       
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+    &__img
+      min-width: 40px
+      height: 40px
+      border-radius: 50%
+      border: 2px solid $primary-color
+      margin-right: 30px
+      background-size: 16px 
+      background-repeat: no-repeat
+      background-position: center
+      &-1
+        background-image:url('../repair/img/clock.png')         
+      &-2
+        background-image:url('../repair/img/calculator.png')
+      &-3
+        background-image:url('../repair/img/paint.png')
+    &__text   
+      font-size: 14px
+      font-weight: 400
+
+     
+
+      
+
+
+        
