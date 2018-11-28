@@ -500,15 +500,15 @@ template {
 }
 
 .main-advantages__img-1 {
-  background-image: url("../repair/img/clock.png");
+  background-image: url("../img/clock.png");
 }
 
 .main-advantages__img-2 {
-  background-image: url("../repair/img/calculator.png");
+  background-image: url("../img/calculator.png");
 }
 
 .main-advantages__img-3 {
-  background-image: url("../repair/img/paint.png");
+  background-image: url("../img/paint.png");
 }
 
 .main-advantages__text {
@@ -519,7 +519,7 @@ template {
 .feedback {
   padding: 94px 0;
   position: relative;
-  background-image: url("../repair/img/photo_feedback.jpg");
+  background-image: url("../img/photo_feedback.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left 700px;
@@ -585,7 +585,7 @@ template {
 }
 
 .form__item__img-4 {
-  background-image: url("../repair/img/phone-receiver.png");
+  background-image: url("../img/phone-receiver.png");
 }
 
 .form__item__text {
@@ -604,7 +604,15 @@ template {
 
 .form__item__text-1 {
   max-width: 230px;
-  margin-right: 90pxbutton;
+  margin-right: 90px;
+}
+
+.form__item__phone {
+  color: #333333;
+  display: block;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 15px;
 }
 
 *, *:before, *:after {
