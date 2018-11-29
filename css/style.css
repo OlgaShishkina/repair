@@ -519,10 +519,22 @@ template {
 .feedback {
   padding: 94px 0;
   position: relative;
+  z-index: 1;
   background-image: url("../img/photo_feedback.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left 700px;
+}
+
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
 }
 
 .form {
@@ -644,5 +656,97 @@ img {
   .container {
     width: 767px;
   }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .feedback {
+    background: #ffffff;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    max-width: 400px;
+    margin: auto;
+  }
+  .main-text-title {
+    text-align: center;
+  }
+  .form__item__phone {
+    text-align: center;
+  }
+  .form__item__text-1 {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 95%;
+  }
+  .header-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /*justify-content: space-between*/
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*padding: 8px 0*/
+  }
+  .header-logo {
+    margin-bottom: 20px;
+  }
+  .header-text__contacts {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .header-text__button {
+    margin: 10px 0;
+  }
+  .main-text {
+    max-width: 300px;
+    margin: auto;
+  }
+  .form__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__item__phone {
+    text-align: center;
+  }
+  .form__item__text-1 {
+    text-align: center;
+    margin: 20px 0;
+    max-width: 100%;
+  }
+  .form__item__img {
+    margin: 10px 0;
+  }
+  /*  border-radius: 50%*/
+  /*  border: 2px solid $item-phone*/
+  /*  background-image: url('../img/phone-receiver.png')   */
+  /*  background-repeat: no-repeat*/
+  /*  background-position: center*/
+  /* background-color: #ffffff*/
+  /*  background-size: 20px */
+  /*.header-text__button-2 */
+  /*  display: none*/
 }
 /*# sourceMappingURL=style.css.map */

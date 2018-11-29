@@ -1,11 +1,23 @@
 .feedback
   padding: 94px 0
   position: relative
+  z-index: 1
   background: 
     image: url('../img/photo_feedback.jpg')
     repeat: no-repeat
     size: contain
     position: center left 700px
+    
+  &:before
+    content: ''
+    left: 0
+    top: 0
+    width: 60%
+    height: 100%
+    background-color: #fff
+    position: absolute
+    z-index: -1
+
 .form
   max-width: 575px
   &__title
