@@ -649,6 +649,7 @@ img {
 @media (max-width: 1199px) {
   .container {
     width: 970px;
+    margin: auto;
   }
 }
 
@@ -665,7 +666,7 @@ img {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     width: 95%;
   }
@@ -688,11 +689,50 @@ img {
   .form__item__text-1 {
     margin-right: 60px;
   }
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 265px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 270px;
+  }
+}
+
+@media (max-width: 601px) {
+  .container {
+    width: 95%;
+  }
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 250px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 275px;
+  }
+}
+
+@media (max-width: 590px) {
+  .container {
+    width: 95%;
+  }
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 240px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 270px;
+  }
 }
 
 @media (max-width: 575px) {
   .container {
-    width: 95%;
+    width: 85%;
   }
   .header-wrap {
     display: -webkit-box;
@@ -722,6 +762,18 @@ img {
     max-width: 300px;
     margin: auto;
   }
+  .main-text-title {
+    text-align: center;
+  }
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 205px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 220px;
+  }
   .form__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -738,6 +790,69 @@ img {
   }
   .form__item__img {
     margin: 10px 0;
+  }
+}
+
+@media (max-width: 542px) {
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 205px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 205px;
+  }
+}
+
+@media (max-width: 524px) {
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 190px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 190px;
+  }
+}
+
+@media (max-width: 501px) {
+  .container {
+    width: 85%;
+  }
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 174px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 174px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form__input-1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 140px;
+  }
+  .form__input-2 {
+    margin-bottom: 30px;
+    width: 140px;
   }
   /*  border-radius: 50%*/
   /*  border: 2px solid $item-phone*/
