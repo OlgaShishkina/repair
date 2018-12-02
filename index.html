@@ -5,45 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
-  <link rel="stylesheet" href="../hw19_repair/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="/script.js"></script>
-    <!-- можно указать ссылку на локальный файл 
-    <script src="../../Webstart/lesson19_jQuery/jquery-2.2.4.min.js">
-    </script>
-    -->
+  
   <header class="header">
     <div class="container  header-wrap">
       <div class="header-logo">
         <img src="img/logo.png" alt="Ремонт квартир логотип">
       </div><!--/.header-logo -->
-
-      <!--<div class="header-text"> -->
+      <div class="header-text">
         <div class="header-text__contacts">
           <span class="header-text__city">Калуга, Москва, МО</span>
           <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
         </div><!--/.header-text_contacts-->
-
         <div class="header-text__button">
-          <button class="button header-text__button-1"><span class="header-text__button-2">Перезвоните мне</span></button>
+          <button class="button header-text__button-1" id="button-callback">
+            <span class="header-text__button-2">Перезвоните мне</span></button>
         </div> <!--/.header-text__button-->
-
-     <!--</div> /.header-text -->
+      </div><!-- /.header-text -->
     </div><!--/.container -->
   </header>
   <div class="main">
     <div class="container">
       <div class="main-wrap">
-
         <div class="main-text">
           <h1 class="main-text__title">
             Внутренняя отделка помещений "под&nbsp;ключ"
           <span>с гарантией качества, прописанной в&nbsp;договоре</span>
           </h1>
             <div class="main-advantages">
-
               <div class="main-advantages__item">
                 <div class="main-advantages__img  main-advantages__img-1"></div>
                 <div class="main-advantages__text">
@@ -70,6 +61,7 @@
       </div> <!--/.main-wrap-->
     </div><!--/.container-->
   </div><!--/.main--> 
+
   <section class="feedback">
     <div class="container">
       <div class="form">
@@ -80,8 +72,10 @@
         <input type="text" class="input  input-name form__input-1" placeholder="Ваше имя">
         <input type="tel" class="input  input-tel form__input-2" placeholder="Ваш телефон">
         <button type="submit" class="button  form__button" >Получить бесплатный дизайн&nbsp;-&nbsp;проект</button>
-        </form> 
-
+        </form>
+        <!--так сделано в видеоуроке-->
+       
+        <!-- так было у меня -->
         <div class="form__item">
           <div class="form__item__text form__item__text-1 ">
                     Наш менеджер перезвонит Вам в&nbsp;течение&nbsp;60&nbsp;секунд
@@ -97,5 +91,130 @@
       </div> <!--form --> 
     </div>     
   </section>
+
+  <div class="modal modal_visible" id="modal-callback"> <!-- начало модального окна-->
+    <div class="modal__dialog"> <!-- окошко посередине-->
+      <div class="modal__close">&#10006;</div><!--./close--> <!--крестик сверху слева-->
+
+      <div class="modal-wrap"> <!-- обертка для окошка в  модальном  окне -->
+     <div class="modal-offer-timur"> <!--   дополнительный див -->
+      <div class="modal-offer"> <!--весь блок слева-->
+      <div class="modal-offer-wrap"> <!-- обертка для части справа-->
+  
+        <div class="modal-offer-item"> <!-- первое предложение-->
+
+          <div class="modal-offer-item__img ">
+            <img src="img/photom1.png" alt="photom1">
+          </div><!-- modal-offer-item__img-->
+
+          <div class="modal-offer-item__text">
+            <div class="modal-offer-item__title ">Ванная комната</div>            
+              <p class="modal-offer-item__text__line">135*150 -<span class="price">31 000 руб.</span></p>
+              <p class="modal-offer-item__text__line">170*170 -<span class="price">43 000 руб.</span></p>
+          </div> <!--modal-offer-item__text -->
+
+          </div>  <!--/.modal-offer-item--> 
+        
+        <div class="modal-offer-item"> <!-- второе предложение-->
+
+          <div class="modal-offer-item__img ">
+            <img src="img/photom2.png"  alt="photom2">
+          </div><!-- modal-offer-item__img-->
+
+          <div class="modal-offer-item__text">
+              <div class="modal-offer-item__title ">Туалет</div>             
+            <p class="modal-offer-item__text__line">135*70 -<span class="price">14 000 руб.</span></p>
+                        
+          </div> <!--modal-offer-item__text -->
+            
+          </div>  <!--/.modal-offer-item--> 
+          <div class="modal-offer-item"> <!-- третье предложение-->
+
+            <div class="modal-offer-item__img">
+              <img src="img/photom3.png"  alt="photom3">
+            </div><!-- modal-offer-item__img-->
+  
+            <div class="modal-offer-item__text">
+              <div class="modal-offer-item__title">Совмещенный санузел</div>             
+                <p class="modal-offer-item__text__line" >170*210 -<span class="price">54 000 руб.</span></p>
+                    
+            </div> <!--modal-offer-item__text -->
+              
+            </div>  <!--/.modal-offer-item--> 
+          </div> <!-- обертка для верхней  части справа-->    
+        <div class="modal-offer-text">
+          <span class="modal-offer-text__title">В стоимость работ входит</span>
+          <ul class="modal-offer__list">
+            <li class="modal-offer__list-disc"> 
+              <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+            </li>
+            <li class="modal-offer__list-disc"> 
+                <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+            </li> 
+            <li class="modal-offer__list-disc"> 
+                <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+            </li>
+            <li class="modal-offer__list-disc"> 
+                <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+            </li>
+            <li class="modal-offer__list-disc"> 
+                <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+            </li>
+           
+          </ul>
+
+        </div> <!-- modal-offer-text -->  
+      </div>  <!-- modal-offer-timur  дополнительный див-->        
+      </div> <!-- modal-offer   часть слева закончилась-->     
+
+      <div class="modal-form"> <!--часть справа-->
+        <h2 class="form__title">Узнайте точную стоимость&nbsp;ремонта по телефону!</h2>
+        <span class="form__subtitle">Заполните поля ниже&nbsp;- мы свяжемся с Вами</span> 
+
+        <form action="#" class="form-input">
+          <input type="text" class="input  input-name form__input-1" placeholder="Ваше имя">
+          <input type="tel" class="input  input-tel form__input-2" placeholder="Ваш телефон">
+          <button type="submit" class="button  form__button" >Узнать стоимость</button>
+        </form>  <!-- это форма для ввода-->
+
+        <div class="modal-form-call"> <!--это блок внизу под формой ввода-->
+          <div class="modal-form-call__text">
+              или Вы можете перезвонить нам&nbsp;сами  по телефону:
+          </div> <!--modal-form-call__text-->
+
+          <div class="modal-form-call__phone">
+            <span class="modal-form-call__phone">+7 (8182) 42-51-31</span> 
+            <!-- может здесь достаточно span и div не нужен?-->  
+          </div> <!--"modal-form-call__phone--> 
+        </div> <!--/.modal-form-call   -->
+                 
+      </div><!--modal-form   часть справа закончилась-->
+   
+      </div><!--modal-wrap-->  
+    </div> <!--./ modal__dialog-->
+  </div><!--./modal-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function() { 
+      $('#button-callback').on('click', function() {        
+        $('#modal-callback').toggleClass('modal_visible')
+      }); 
+      $('.modal__close').on('click', function() {        
+        $('#modal-callback').toggleClass('modal_visible')
+      });          
+    });  
+  </script>  
+
+
+ <!--  <script src="/../../PROJECTS/hw19_repair/script.js"></script>
+
+console.log("вы нажали на кнопку");
+
+    можно указать ссылку на локальный файл 
+    <script src="../../Webstart/lesson19_jQuery/jquery-2.2.4.min.js">
+    </script>
+    -->
+ 
 </body>
 </html>

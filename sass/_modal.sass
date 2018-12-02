@@ -1,0 +1,103 @@
+.modal
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.52)
+  left: 0
+  top: 0
+  z-index: 99
+  display: none
+  &_visible
+    display: flex
+  &__dialog
+    max-width: 1171px
+    height: 700px
+    background-color: #ffffff
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+  &__close
+    position: absolute
+    top: 15px
+    right: 15px
+    &:hover
+      cursor: pointer
+.modal-wrap
+  display: flex  
+  //justify-content: space-between
+  //align-items: left
+
+.modal-offer-timur
+  width: 550px 
+  padding-top: 50px
+  background-color: #f7f7f7
+
+.modal-offer
+  display: flex 
+  flex-direction: column
+  margin-right: 20px
+  margin-left: 100px  
+  color: #000000
+  //background-color: #f7f7f7
+  //justify-content: space-around
+  //align-items: left
+.modal-form
+  padding: 0 100px  
+.modal-offer-wrap
+  display: flex 
+  flex-direction: column 
+.modal-offer-item
+  display: flex
+  //justify-content: space-between
+  //align-items: center
+.modal-offer-item__img
+  width: 123px
+  margin-right: 29px
+  margin-bottom: 20px
+  flex-direction: column   
+.modal-offer-item__text
+  display: flex
+  flex-direction: column
+
+.modal-offer-item__title
+  font-family: 'Museo Sans Bold' , sans-serif
+  font-size: 16px
+.modal-offer-item__title:after 
+  content: ""
+  display: block
+  width: 45px
+  height: 3px
+  background-color: #ffd200
+  margin-top: 12px
+  margin-bottom: 12px
+
+
+.modal-offer-item__text__line 
+  font-family: 'Museo Sans Light' , sans-serif
+  font-size: 16px
+  margin: 0
+
+.modal-offer-text__title
+  font-family: 'Museo Sans Bold' , sans-serif
+  font-size: 14px
+  margin-bottom: 10px 
+
+.modal-offer__list
+  list-style-type: disc
+  margin: 0
+  padding-left: 15px
+
+
+.modal-offer__list-disc 
+  font-family: 'Museo Sans Light' , sans-serif
+  color: #ffd200
+  font-size: 22px
+
+.modal-offer__list-p
+  color: #000000
+  font-size: 13px
+  line-height: 20px
+  margin: 0
+  padding: 0
