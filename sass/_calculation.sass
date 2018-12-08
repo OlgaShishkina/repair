@@ -1,0 +1,139 @@
+.calculation
+  background: 
+    image: url('../img/calc_bg.jpg')
+    repeat: no-repeat
+    //size: contain
+    position: center 
+.calculation-container
+  display: flex
+  justify-content: space-between  
+.calculation
+  &-text
+    max-width: 504px
+    padding-top: 90px       
+    &__title
+      font-family: "Museo Sans Cyrl -700"
+      font-size: 24px
+      color: #000000  
+      font-size: 22px
+      font-weight: 400
+      line-height: 33px      
+    &__subtitle
+      font-size: 20px
+      display: block
+      margin-top: 50px
+      margin-bottom: 90px
+.calculation
+  &-text
+    &__list
+      list-style-type: none
+      line-height: 32px
+      font-family: "Museo Sans Cyrl -500"
+      font-size: 18px
+      font-weight: 400
+      margin-left: -12px
+      
+.calculation
+  &-text
+    &__item
+      position: relative
+      padding-left: 30px
+      counter-increment: item
+      margin-bottom: 15px
+.calculation
+  &-text
+    &__item
+      &:before 
+        content: counter(item)"."
+        position: absolute
+        left: -30px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 35px
+        height: 35px
+        border: 2px solid #000
+        border-radius: 50%
+
+
+//.calculation-text__list  это другой вариант, но не до конца стилизованный
+//  margin: 0
+//  padding: 0
+//  list-style: none
+//  counter-reset: list 1  
+
+//.calculation-text__item 
+// font-size: 14px
+// line-height: 25px
+//  font-family: 'Museo Sans light', sans-serif
+//  position: relative
+//  list-style-type: none
+//  padding-left: 20px
+
+//.calculation-text__item:before 
+//  counter-increment: list
+//  content: counter(list)". "    
+// position: absolute
+//  height: 35px
+//  width: 35px
+//  vertical-align: middle
+//  border-radius: 50%
+//  color: #000
+//  border: 2px solid #000
+//  margin-right: 15px
+//  left: -20px  // поправила не 0 а -20
+//  top: 0  
+
+.calculation
+  &-form
+    max-width: 370px
+    display: flex
+    flex-direction: column
+    margin-bottom: 50px
+   
+    &__title
+      +bold
+      font-size: 22px
+      font-weight: 400
+      line-height: 33px
+      color: #333333 
+      margin-bottom: 52px 
+      margin-top: 100px
+      text-align: center
+    &__subtitle
+      display: block
+      margin-bottom: 50px 
+      font-family: "Museo Sans Cyrl -300"
+      font-size: 16px
+      font-weight: 400
+      line-height: 35px
+      color: #333333
+      text-align: center
+    &__phone
+      font-family: "Museo Sans Cyrl -300"
+      font-size: 15px
+      font-weight: 400
+      line-height: 24px
+      color: #333333
+      text-align: center
+  &__input         
+    &-1
+      width: 370px
+      height: 65px
+      margin-bottom: 15px     
+    &-2    
+      width: 370px
+      height: 65px
+      margin-bottom: 30px
+      
+  &__button
+    padding: 28px
+    display: block
+    width: 370px
+    height: 65px
+    font-size: 16px
+    margin-bottom: 33px
+    text-align: center
+
+
+

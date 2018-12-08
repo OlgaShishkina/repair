@@ -6,9 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+ <!-- <script src="../20/js/jquery-2.2.4.min.js"></script>--> 
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ 
 </head>
-<body>
-  
+<body>  
   <header class="header">
     <div class="container  header-wrap">
       <div class="header-logo">
@@ -68,14 +72,12 @@
         <h2 class="form__title">Мы бесплатно разработаем дизайн&nbsp;-проект
         Вашего жилья и реализуем его!</h2>
         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн&nbsp;-&nbsp;проекта!</span> 
-        <form action="#" class="form-input">
-        <input type="text" class="input  input-name form__input-1" placeholder="Ваше имя">
-        <input type="tel" class="input  input-tel form__input-2" placeholder="Ваш телефон">
-        <button type="submit" class="button  form__button" >Получить бесплатный дизайн&nbsp;-&nbsp;проект</button>
-        </form>
-        <!--так сделано в видеоуроке-->
+        <form action="mailer/smart.php" method="POST" class="js-ajax"> <!--  был class form-input-->
+        <input type="text" name="fio" class="input  user_name form__input-1" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" class="input  user_phone form__input-2" placeholder="Ваш телефон" required>
+        <button type="submit" class="button  form__button" >Получить <span class="hidden-xs">бесплатный дизайн&nbsp;-&nbsp;проект</span></button>
+        </form>    
        
-        <!-- так было у меня -->
         <div class="form__item">
           <div class="form__item__text form__item__text-1 ">
                     Наш менеджер перезвонит Вам в&nbsp;течение&nbsp;60&nbsp;секунд
@@ -91,13 +93,84 @@
       </div> <!--form --> 
     </div>     
   </section>
+<!-- создаем секцию портфолио-->
+<section class="portfolio">
+  <div class="container">
+    <h2 class="section-title section-title_center">Работая с 2007 года, <br>
+      мы сделали более 500 ремонтов в квартирах и домах
+    </h2>
+    
+    <div class="slider">
 
-  <div class="modal modal_visible" id="modal-callback"> <!-- начало модального окна-->
+      <div class="slider__item">
+        <img src="img/1.jpg" alt="slider1">
+      </div>
+
+      <div class="slider__item">
+          <img src="img/2.jpg" alt="slider2">
+      </div>  
+
+      <div class="slider__item">
+          <img src="img/3.jpg" alt="slider3">
+      </div>
+
+      <div class="slider__item">
+          <img src="img/1.jpg" alt="slider1">
+      </div>
+
+      <div class="slider__item">
+          <img src="img/2.jpg" alt="slider2">
+      </div>
+
+      <div class="slider__item">
+          <img src="img/3.jpg" alt="slider3">
+      </div>  
+    </div> <!--slider -->
+  </div> <!--container-->  
+</section>
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<script src="js/slick.min.js"></script>
+<script>
+  $(document).ready(function () {
+      $('.slider').slick ({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow:'<div class="arrow arrow_right"></div>',
+        prevArrow:'<div class="arrow arrow_left"></div>',
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  prevArrow: null,
+                  nextArrow: null
+              }
+            } 
+          ]
+        });        
+      });
+</script> 
+  <div class="modal" id="modal-callback"> <!-- начало модального окна-->
     <div class="modal__dialog"> <!-- окошко посередине-->
       <div class="modal__close">&#10006;</div><!--./close--> <!--крестик сверху слева-->
 
       <div class="modal-wrap"> <!-- обертка для окошка в  модальном  окне -->
-     <div class="modal-offer-timur"> <!--   дополнительный див -->
+     <!--<div class="modal-offer-timur">    дополнительный див -->
       <div class="modal-offer"> <!--весь блок слева-->
       <div class="modal-offer-wrap"> <!-- обертка для части справа-->
   
@@ -164,22 +237,22 @@
           </ul>
 
         </div> <!-- modal-offer-text -->  
-      </div>  <!-- modal-offer-timur  дополнительный див-->        
+     <!-- </div>   modal-offer-timur  дополнительный див-->        
       </div> <!-- modal-offer   часть слева закончилась-->     
 
       <div class="modal-form"> <!--часть справа-->
-        <h2 class="form__title">Узнайте точную стоимость&nbsp;ремонта по телефону!</h2>
+        <h2 class="form__title">Узнайте точную стоимость<br>ремонта по телефону!</h2>
         <span class="form__subtitle">Заполните поля ниже&nbsp;- мы свяжемся с Вами</span> 
 
-        <form action="#" class="form-input">
-          <input type="text" class="input  input-name form__input-1" placeholder="Ваше имя">
-          <input type="tel" class="input  input-tel form__input-2" placeholder="Ваш телефон">
+        <form action="mailer/smart.php" method="POST" class="form-input">
+          <input type="text" name="fio" class="input  user_name form__input-1" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" class="input  user_phone  form__input-2" placeholder="Ваш телефон" required>
           <button type="submit" class="button  form__button" >Узнать стоимость</button>
         </form>  <!-- это форма для ввода-->
 
         <div class="modal-form-call"> <!--это блок внизу под формой ввода-->
           <div class="modal-form-call__text">
-              или Вы можете перезвонить нам&nbsp;сами  по телефону:
+              или Вы можете перезвонить нам<br>сами  по телефону:
           </div> <!--modal-form-call__text-->
 
           <div class="modal-form-call__phone">
@@ -194,27 +267,86 @@
     </div> <!--./ modal__dialog-->
   </div><!--./modal-->
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
     $(document).ready(function() { 
       $('#button-callback').on('click', function() {        
-        $('#modal-callback').toggleClass('modal_visible')
+        $('#modal-callback').toggleClass('modal_visible') //# это обращение к  id
       }); 
       $('.modal__close').on('click', function() {        
         $('#modal-callback').toggleClass('modal_visible')
       });          
     });  
-  </script>  
+  </script> 
+
+  <div class="calculation"> <!-- создала новую секцию-->
+    <div class="calculation-container container">
+    <!-- это обертка для этой секции для ограничения контента и выравнивания его по центру-->
+      <div class="calculation-text"> 
+      <!-- это часть слева, внутри нее располагается контент в  виде заголовка подзаголовка и списка--> 
+        <h1 class="calculation-text__title">        
+          Мы можем озвучить Вам примерную стоимость
+          работы и материалов по телефону                      
+          <span class="calculation-text__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+        </h1>         
+        <ol type="1" class="calculation-text__list"> <!-- это  div  для всего списка-->
+          <li class="calculation-text__item">
+          <!-- это элемент списка, к нему я сделаю пвсевдоэлемент before для размещения кружочков с цифрами-->
+            <span class="calculation-text__p "> <!-- это сам текст элемента списка-->
+            Какова площадь помещения?
+            </span>
+          </li>
+          <li class="calculation-text__item">
+            <span class="calculation-text__p">
+            У Вас новостройка или вторичное жилье?
+            </span>
+          </li>  
+          <li class="calculation-text__item">
+            <span class="calculation-text__p">
+              Где находится помещение, в котором будет производиться ремонт?
+            </span>
+          </li>
+          <li class="calculation-text__item">
+            <span class="calculation-text__p ">
+              Назначение помещения?
+            </span>
+          </li> 
+        </ol> 
+      </div> <!-- calculation-text закончилась часть слева-->
+      <div class="calculation-form">  <!-- это часть справа-->
+        <h2 class="calculation-form__title">
+          Оставьте заявку на бесплатный расчет ремонта по телефону
+        </h2>
+        <div class="calculation-form__subtitle">
+          Для этого заполните форму ниже
+        </div> <!-- наверное можно было сделать span?-->
+        <form action="mailer/smart.php" method="POST" class="calculation-input"> <!-- это секция  с окном ввода данных-->
+          <input type="text" name="fio" class="input user_name calculation__input-1" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" class="input user_phone calculation__input-2" placeholder="Ваш телефон" required>
+          <button type="submit" class="button  calculation__button" >Рассчитать <span class="hidden-xs">стоимость</span></button>
+        </form>
+        <div class="calculation-form__phone">  <!-- это div для телефона, мы его выделяем в отдельный div вот зачеи? -->
+          Мы перезвоним Вам в течение 60 секунд         
+          </div> <!--calculation-form__phone -->      
+      </div><!--calculation-form -->
+    </div><!-- container-->
+  </div> <!--calculation-->
+
+<script>
+  $('form').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      alert("Сообщение успешно отправлено");
+      $("form").trigger("reset");
+    });
+    return false;
+  });
+</script>  
 
 
- <!--  <script src="/../../PROJECTS/hw19_repair/script.js"></script>
-
-console.log("вы нажали на кнопку");
-
-    можно указать ссылку на локальный файл 
-    <script src="../../Webstart/lesson19_jQuery/jquery-2.2.4.min.js">
-    </script>
-    -->
- 
 </body>
 </html>

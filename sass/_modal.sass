@@ -1,25 +1,25 @@
 .modal
   position: fixed
-  width: 100%
-  height: 100%
+  width: 100% // от тэга body
+  height: 100% // from tag body
   background-color: rgba(#000, 0.52)
   left: 0
   top: 0
   z-index: 99
-  display: none
+  display: none  //  this for being modal non visible  по умолчанию
   &_visible
     display: flex
   &__dialog
     max-width: 1171px
     height: 700px
     background-color: #ffffff
-    margin: auto
+    margin: auto //  расположит окошко dialog ровно в центре modal
     display: flex
     justify-content: center
     align-items: center
     position: relative
   &__close
-    position: absolute
+    position: absolute // прикрепляет этот  элемент к родителю, у кот свойство relative
     top: 15px
     right: 15px
     &:hover
@@ -28,23 +28,23 @@
   display: flex  
   //justify-content: space-between
   //align-items: left
-
-.modal-offer-timur
-  width: 550px 
+.modal-offer
+  width: 650px 
+  display: flex 
+  flex-direction: column  
+  color: #000000
   padding-top: 50px
   background-color: #f7f7f7
-
-.modal-offer
-  display: flex 
-  flex-direction: column
   margin-right: 20px
-  margin-left: 100px  
-  color: #000000
+  margin-left: 90px
+  padding-left: 80px
+  padding-right: 20px 
   //background-color: #f7f7f7
   //justify-content: space-around
   //align-items: left
 .modal-form
-  padding: 0 100px  
+  padding: 0 100px
+   
 .modal-offer-wrap
   display: flex 
   flex-direction: column 
@@ -101,3 +101,4 @@
   line-height: 20px
   margin: 0
   padding: 0
+ 
