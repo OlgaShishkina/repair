@@ -830,6 +830,110 @@ template {
   font-weight: 400;
 }
 
+.price {
+  padding: 100px 0;
+}
+
+.price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  max-width: 370px;
+  min-height: 410px;
+  text-align: center;
+  padding-bottom: 47px;
+  border: 1px solid #e8e8e8;
+  margin: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover > .card__img-wrap:after {
+  opacity: 1;
+}
+
+.card__img-wrap {
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.card__img-wrap:after {
+  content: '';
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-image: linear-gradient to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%;
+}
+
+.card__title {
+  margin-bottom: 31px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.card__link {
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-decoration: none;
+  color: #333333;
+  display: inline-block;
+  position: relative;
+}
+
+.card__link:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__link:hover:after {
+  height: 13px;
+  z-index: -1;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title-center {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-weight: 600;
+  line-height: 45px;
+}
+
 .calculation {
   background-image: url("../img/calc_bg.jpg");
   background-repeat: no-repeat;
@@ -964,110 +1068,6 @@ template {
   font-size: 16px;
   margin-bottom: 33px;
   text-align: center;
-}
-
-.price {
-  padding: 100px 0;
-}
-
-.price-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.card {
-  max-width: 370px;
-  min-height: 410px;
-  text-align: center;
-  padding-bottom: 47px;
-  border: 1px solid #e8e8e8;
-  margin: 10px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.card:hover {
-  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
-}
-
-.card:hover > .card__img-wrap:after {
-  opacity: 1;
-}
-
-.card__img-wrap {
-  position: relative;
-  margin-bottom: 39px;
-}
-
-.card__img:after {
-  content: '';
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background-image: linear-gradient to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%;
-}
-
-.card__title {
-  margin-bottom: 31px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 45px;
-}
-
-.card__link {
-  font-size: 16px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  text-decoration: none;
-  color: #333333;
-  display: inline-block;
-  position: relative;
-}
-
-.card__link:after {
-  content: '';
-  width: 100%;
-  height: 3px;
-  background-color: #ffd200;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.card__link:hover:after {
-  height: 13px;
-  z-index: -1;
-}
-
-.section-title {
-  text-align: center;
-}
-
-.section-title-center {
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.section-subtitle {
-  text-align: center;
-  font-weight: 600;
-  line-height: 45px;
 }
 
 *, *:before, *:after {
@@ -1234,6 +1234,20 @@ img {
   }
   .calculation-text {
     width: 454px;
+  }
+  .price {
+    padding: 50px 0;
+  }
+  .section-title_center {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .card__title {
+    margin-bottom: 25px;
+    line-height: 40px;
+  }
+  .card {
+    padding-bottom: 20px;
   }
 }
 
