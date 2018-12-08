@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
+  <link rel="stylesheet" href="css/animate.css"> <!-- обязательно до ссылки на style.css-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slick.css">
+
  <!-- <script src="../20/js/jquery-2.2.4.min.js"></script>--> 
   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -21,11 +23,17 @@
       <div class="header-text">
         <div class="header-text__contacts">
           <span class="header-text__city">Калуга, Москва, МО</span>
-          <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
+          <a   data-wow-delay="0.4s"
+               data-wow-iteration="10"
+               class="header-text__phone wow pulse" 
+               href="tel:+74954225131">
+               +7 (495) 42-251-31
+          </a>
         </div><!--/.header-text_contacts-->
-        <div class="header-text__button">
-          <button class="button header-text__button-1" id="button-callback">
-            <span class="header-text__button-2">Перезвоните мне</span></button>
+        <div data-wow-delay="0.4s"  data-wow-iteration="10" class="header-text__button wow pulse">
+          <button class="button header-text__button-1 " id="button-callback">
+            <span class="header-text__button-2">Перезвоните мне</span>
+          </button>
         </div> <!--/.header-text__button-->
       </div><!-- /.header-text -->
     </div><!--/.container -->
@@ -40,20 +48,20 @@
           </h1>
             <div class="main-advantages">
               <div class="main-advantages__item">
-                <div class="main-advantages__img  main-advantages__img-1"></div>
-                <div class="main-advantages__text">
+                <div data-wow-delay="1.6s"  class="main-advantages__img  main-advantages__img-1 wow slideInRight"></div>
+                <div data-wow-delay="1.0s"  class="main-advantages__text wow fadeInRight">
                   Точно соблюдаем сроки
                 </div>
               </div>  <!--/.main-advantages-item-->
               <div class="main-advantages__item">
-                <div class="main-advantages__img  main-advantages__img-2"></div>
-                <div class="main-advantages__text">
+                <div data-wow-delay="2.2s"  class="main-advantages__img  main-advantages__img-2 wow slideInRight"></div>
+                <div data-wow-delay="1.8s"  class="main-advantages__text wow fadeInRight">
                   Рассчитаем смету на работы и материалы в день обращения
                 </div>
               </div>  <!--/.main-advantages-item-->
               <div class="main-advantages__item">
-                  <div class="main-advantages__img  main-advantages__img-3"></div>
-                  <div class="main-advantages__text">
+                  <div data-wow-delay="2.8s"  class="main-advantages__img  main-advantages__img-3  wow slideInRight"></div>
+                  <div data-wow-delay="2.4s"  class="main-advantages__text wow fadeInRight">
                     Предложим более 100 вариантов исполнения дизайна Вашего жилья
                   </div>
                 </div>  <!--/.main-advantages-item-->
@@ -65,6 +73,8 @@
       </div> <!--/.main-wrap-->
     </div><!--/.container-->
   </div><!--/.main--> 
+
+ 
 
   <section class="feedback">
     <div class="container">
@@ -82,11 +92,17 @@
           <div class="form__item__text form__item__text-1 ">
                     Наш менеджер перезвонит Вам в&nbsp;течение&nbsp;60&nbsp;секунд
           </div>
-          <div class="form__item__img  form__item__img-4"></div>
+          <div data-wow-delay="1s"
+               data-wow-iteration="10"
+               class="form__item__img  form__item__img-4 wow wobble">
+          </div>
           <div class="form__item__text form__item__text-2 ">
             или перезвоните нам&nbsp;сами    
             <span class="form__item__phone">
-            <a class="form__item__phone" href="tel:+74954225131">+7 (495) 42-251-31</a> 
+            <a data-wow-delay="0.2s" data-wow-iteration="10" class="form__item__phone wow fadeIn" 
+            href="tel:+74954225131">
+            +7 (495) 42-251-31
+            </a> 
             </span>  
           </div> <!--/.form__item__text form__item__text-2   -->
          </div>  <!-- /. form__item-->             
@@ -130,6 +146,11 @@
 </section>
 <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <script src="js/slick.min.js"></script>
+<script src="js/wow.min.js">
+</script>
+<script>
+  new WOW().init();
+</script>
 <script>
   $(document).ready(function () {
       $('.slider').slick ({
@@ -281,31 +302,31 @@
   <div class="calculation"> <!-- создала новую секцию-->
     <div class="calculation-container container">
     <!-- это обертка для этой секции для ограничения контента и выравнивания его по центру-->
-      <div class="calculation-text"> 
+      <div class="calculation-text "> 
       <!-- это часть слева, внутри нее располагается контент в  виде заголовка подзаголовка и списка--> 
-        <h1 class="calculation-text__title">        
+        <h1 class="calculation-text__title wow pulse">        
           Мы можем озвучить Вам примерную стоимость
           работы и материалов по телефону                      
           <span class="calculation-text__subtitle">Для этого нужно ответить на 4 вопроса:</span>
         </h1>         
         <ol type="1" class="calculation-text__list"> <!-- это  div  для всего списка-->
-          <li class="calculation-text__item">
+          <li  data-wow-delay="0.2s" class="calculation-text__item wow slideInLeft">
           <!-- это элемент списка, к нему я сделаю пвсевдоэлемент before для размещения кружочков с цифрами-->
             <span class="calculation-text__p "> <!-- это сам текст элемента списка-->
             Какова площадь помещения?
             </span>
           </li>
-          <li class="calculation-text__item">
+          <li data-wow-delay="0.6s" class="calculation-text__item wow slideInLeft">
             <span class="calculation-text__p">
             У Вас новостройка или вторичное жилье?
             </span>
           </li>  
-          <li class="calculation-text__item">
+          <li data-wow-delay="1s"class="calculation-text__item wow slideInLeft">
             <span class="calculation-text__p">
               Где находится помещение, в котором будет производиться ремонт?
             </span>
           </li>
-          <li class="calculation-text__item">
+          <li data-wow-delay="1.4s" class="calculation-text__item wow slideInLeft">
             <span class="calculation-text__p ">
               Назначение помещения?
             </span>
@@ -322,9 +343,9 @@
         <form action="mailer/smart.php" method="POST" class="calculation-input"> <!-- это секция  с окном ввода данных-->
           <input type="text" name="fio" class="input user_name calculation__input-1" placeholder="Ваше имя" required>
           <input type="tel" name="phone" class="input user_phone calculation__input-2" placeholder="Ваш телефон" required>
-          <button type="submit" class="button  calculation__button" >Рассчитать <span class="hidden-xs">стоимость</span></button>
+          <button type="submit" data-wow-delay="3s" data-wow-iteration="2" class="button  calculation__button wow flash" >Рассчитать <span class="hidden-xs">стоимость</span></button>
         </form>
-        <div class="calculation-form__phone">  <!-- это div для телефона, мы его выделяем в отдельный div вот зачеи? -->
+        <div data-wow-delay="3s" data-wow-iteration="2" class="calculation-form__phone wow flash">  <!-- это div для телефона, мы его выделяем в отдельный div вот зачеи? -->
           Мы перезвоним Вам в течение 60 секунд         
           </div> <!--calculation-form__phone -->      
       </div><!--calculation-form -->
@@ -345,8 +366,12 @@
     });
     return false;
   });
-</script>  
+</script>
 
-
+<script src="js/wow.min.js">
+</script>
+<script>
+  new WOW().init()
+</script>
 </body>
 </html>
