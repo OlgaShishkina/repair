@@ -42,7 +42,7 @@
     <div class="container">
       <div class="main-wrap">
         <div class="main-text">
-          <h1 class="main-text__title">
+          <h1 data-wow-delay="0.4s" class="main-text__title wow slideInRight ">
             Внутренняя отделка помещений "под&nbsp;ключ"
           <span>с гарантией качества, прописанной в&nbsp;договоре</span>
           </h1>
@@ -235,29 +235,6 @@
 </section>
 <!--price-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <script src="js/slick.min.js"></script>
 <script src="js/wow.min.js">
@@ -418,13 +395,15 @@
     <!-- это обертка для этой секции для ограничения контента и выравнивания его по центру-->
       <div class="calculation-text "> 
       <!-- это часть слева, внутри нее располагается контент в  виде заголовка подзаголовка и списка--> 
-        <h1 class="calculation-text__title wow pulse">        
+        <h1  data-wow-delay="0.1s" class="calculation-text__title wow slideInLeft">        
           Мы можем озвучить Вам примерную стоимость
           работы и материалов по телефону                      
-          <span class="calculation-text__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+          <span data-wow-delay="0.2s" class="calculation-text__subtitle wow slideInLeft">
+            Для этого нужно ответить на 4 вопроса:
+          </span>
         </h1>         
         <ol type="1" class="calculation-text__list"> <!-- это  div  для всего списка-->
-          <li  data-wow-delay="0.2s" class="calculation-text__item wow slideInLeft">
+          <li  data-wow-delay="0.3s" class="calculation-text__item wow slideInLeft">
           <!-- это элемент списка, к нему я сделаю пвсевдоэлемент before для размещения кружочков с цифрами-->
             <span class="calculation-text__p "> <!-- это сам текст элемента списка-->
             Какова площадь помещения?
@@ -435,12 +414,12 @@
             У Вас новостройка или вторичное жилье?
             </span>
           </li>  
-          <li data-wow-delay="1s"class="calculation-text__item wow slideInLeft">
+          <li data-wow-delay="0.9s"class="calculation-text__item wow slideInLeft">
             <span class="calculation-text__p">
               Где находится помещение, в котором будет производиться ремонт?
             </span>
           </li>
-          <li data-wow-delay="1.4s" class="calculation-text__item wow slideInLeft">
+          <li data-wow-delay="1.2s" class="calculation-text__item wow slideInLeft">
             <span class="calculation-text__p ">
               Назначение помещения?
             </span>
@@ -459,7 +438,7 @@
           <input type="tel" name="phone" class="input user_phone calculation__input-2" placeholder="Ваш телефон" required>
           <button type="submit" data-wow-delay="3s" data-wow-iteration="2" class="button  calculation__button wow flash" >Рассчитать <span class="hidden-xs">стоимость</span></button>
         </form>
-        <div data-wow-delay="3s" data-wow-iteration="2" class="calculation-form__phone wow flash">  <!-- это div для телефона, мы его выделяем в отдельный div вот зачеи? -->
+        <div data-wow-delay="4s"  class="calculation-form__phone wow swing">  <!-- это div для телефона, мы его выделяем в отдельный div вот зачеи? -->
           Мы перезвоним Вам в течение 60 секунд         
           </div> <!--calculation-form__phone -->      
       </div><!--calculation-form -->
@@ -482,16 +461,109 @@
   });
 </script>
 
+
+
+<section class="steps"> 
+  <div class="steps-container container">
+    <h2 class="steps-title  section-title">
+        Наши специалисты готовы выехать на замер<br>
+        в любое удобное для Вас время 
+    </h2>
+  <!-- steps-title_center  section-title-->
+    <h3 class="section-subtitle steps-subtitle">
+        5 шагов до ремонта
+    </h3>  <!--section-subtitle--> 
+
+    <div class="steps-wrap"><!-- делаю обертку для части с иконками и стрелками-->
+
+      <div class="steps-item wow fadeInLeft" data-wow-delay="0.2s" ><!-- это я создаю item с одной иконкой и текстом под ней-->
+        <div class="steps-item__img steps-item__img-1"> </div><!--steps-item__img  это элемент с кружком и иконкой на заднем фоне-->
+          <div class="steps-item__text"> 
+              Вы звоните нам<br>
+              или оставляете заявку
+          </div><!--steps-item__text-->
+      </div> <!-- steps-item-->
+      
+      <div class="steps-arrow wow rotateInDownLeft" data-wow-delay="0.4s" ><!-- это я создаю item  для стрелки-->
+        <div class="steps-arrow-img">
+          <img src="img/steps/steps_arrow.png" alt="step_arrow">
+        </div><!--steps-arrow-img" это элемент со стрелкой на заднем фоне-->
+        </div> <!-- steps-arrow-->
+
+      <div class="steps-item wow fadeInLeft" data-wow-delay="0.6s" ><!-- это я создаю item с одной иконкой и текстом под ней-->
+        <div class="steps-item__img steps-item__img-2"> </div><!--steps-item__img  это элемент с кружком и иконкой на заднем фоне-->
+        <div class="steps-item__text"> 
+          Согласуем удобное
+          для Вас время выезда 
+          специалиста на замер          
+        </div><!--steps-item__text-->
+      </div> <!-- steps-item-->
+          
+      <div class="steps-arrow wow rotateInDownLeft" data-wow-delay="0.8s" ><!-- это я создаю item  для стрелки-->
+        <div class="steps-arrow-img">
+          <img src="img/steps/steps_arrow.png" alt="step_arrow">
+        </div><!--steps-arrow-img" это элемент со стрелкой на заднем фоне-->
+        </div> <!-- steps-arrow--> 
+      
+      <div class="steps-item wow fadeInLeft" data-wow-delay="1s" ><!-- это я создаю item с одной иконкой и текстом под ней-->
+        <div class="steps-item__img  steps-item__img-3"> </div><!--steps-item__img  это элемент с кружком и иконкой на заднем фоне-->
+        <div class="steps-item__text"> 
+              Рассчитываем смету
+                согласовываем
+                    с Вами              
+        </div><!--steps-item__text-->
+      </div> <!-- steps-item-->
+      
+      <div class="steps-arrow wow rotateInDownLeft" data-wow-delay="1s" ><!-- это я создаю item  для стрелки-->
+        <div class="steps-arrow-img">
+          <img src="img/steps/steps_arrow.png" alt="step_arrow">
+        </div><!--steps-arrow-img" это элемент со стрелкой на заднем фоне-->
+        </div> <!-- steps-arrow-->
+      
+      <div class="steps-item wow fadeInLeft" data-wow-delay="1.2s" ><!-- это я создаю item с одной иконкой и текстом под ней-->
+        <div class="steps-item__img steps-item__img-4"> </div><!--steps-item__img  это элемент с кружком и иконкой на заднем фоне-->
+        <div class="steps-item__text"> 
+              Подписываем договор
+              закупаем материал
+              по оптовым ценам
+        </div><!--steps-item__text-->
+      </div> <!-- steps-item-->
+      
+      <div class="steps-arrow wow rotateInDownLeft" data-wow-delay="1.4s" ><!-- это я создаю item  для стрелки-->
+        <div class="steps-arrow-img">
+          <img src="img/steps/steps_arrow.png" alt="step_arrow">
+        </div><!--steps-arrow-img" это элемент со стрелкой на заднем фоне-->
+        </div> <!-- steps-arrow-->
+
+      <div class="steps-item wow fadeInLeft" data-wow-delay="1.6s" ><!-- это я создаю item с одной иконкой и текстом под ней-->
+        <div class="steps-item__img steps-item__img-5"> </div><!--steps-item__img  это элемент с кружком и иконкой на заднем фоне-->
+        <div class="steps-item__text"> 
+            Выполняем ремонт
+            в указанные сроки
+        </div><!--steps-item__text-->
+      </div> <!-- steps-item-->
+
+        
+    </div>
+    <!--steps-wrap -->
+
+    <div class="steps-cheap"><!-- или сделать как заголовок?-->
+        Ремонт обойдется Вам дешевле, так как<br>
+        мы используем качественные материалы по оптовым ценам
+    </div><!-- steps-cheap-->
+    
+  </div>
+  <!-- container-->
+</section>
+<!--steps-->
+
+
+</section><!--steps -->
 <script src="js/wow.min.js">
 </script>
 <script>
   new WOW().init()
 </script>
-
-
-
-
-
 
 </body>
 </html>

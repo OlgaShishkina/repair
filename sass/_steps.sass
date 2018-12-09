@@ -1,0 +1,64 @@
+.steps
+  padding: 100px 0
+  &-wrap
+    display: flex
+    justify-content: space-around
+  &-title 
+    font-size: 30px 
+  &-subtitle
+    font-family: "Museo Sans Cyrl -100"
+    font-weight: 500
+    line-height: 45px
+    margin-bottom: 20px
+  &-item
+    display: flex
+    flex-direction: column
+    max-width: 146px// из макета
+    min-height: 164px// из макета
+    text-align: center  // выравняли содержимое div  по центру
+    //padding-bottom: 47px
+    margin: 10px 
+    align-items: center 
+    &__text
+      font-family: "Museo Sans Cyrl -300"
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+    &__img
+      min-width: 100px
+      height: 100px
+      border-radius: 50%
+      border: 2px solid $primary-color
+      background-size: 35px 
+      background-repeat: no-repeat
+      background-position: center 
+      margin-bottom: 40px              
+      &-1
+        background-image: url('../img/steps/steps1.png')
+      &-2
+        background-image: url('../img/steps/steps2.png')
+      &-3
+        background-image: url('../img/steps/steps3.png')
+      &-4
+        background-image: url('../img/steps/steps4.png')
+      &-5
+        background-image: url('../img/steps/steps5.png')
+  &-cheap
+    display: block
+    height: 280px
+    width: 100%
+    text-align: center 
+    vertical-align
+    font-family: "Museo Sans Cyrl -300"
+    font-size: 32px
+    font-weight: 400
+    line-height: 50px
+    margin: 80px 0
+    background-color: $primary-color
+.steps-arrow
+  max-width: 72px// из макета
+  min-height: 25px// из макета
+  margin: 1px 
+  
+
+

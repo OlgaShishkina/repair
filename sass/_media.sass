@@ -102,7 +102,18 @@
     margin-bottom: 25px
     line-height: 40px      
   .card 
-    padding-bottom: 20px;
+    padding-bottom: 20px
+  .steps
+    padding: 70px 0
+    &-cheap    
+      height: 200px
+      width: 100%     
+      font-size: 25px
+      line-height: 38px
+      margin: 30px 0
+    &-item__img
+      min-width: 80px
+      height: 80px
 
 @media (max-width: 601px)
   .container
@@ -122,6 +133,24 @@
     font-size: 27px 
   .calculation-text   
     width: 454px
+  .steps
+    padding: 50px 0
+    &-wrap 
+      flex-direction: column
+      align-items: center
+    &-cheap    
+      height: 160px
+      width: 100%     
+      line-height: 35px
+      margin: 20px 0
+      font-size: 20px
+    &-title 
+      font-size: 22px
+    &-item
+      &__img 
+        margin-bottom: 20px
+  .steps-arrow
+      display: none
 
 
 @media (max-width: 590px)
@@ -201,7 +230,8 @@
     width: 100%
   .form__input-2
     margin-bottom: 30px
-    width: 100%   
+    width: 100%  
+
 @media (max-width: 524px)
   .form__input-1
     margin-right: 30px
@@ -247,7 +277,10 @@
     width: 100% 
   .section-title_center
     padding: 25px
-    font-size: 25px  
+    font-size: 25px
+  .steps-cheap
+    line-height: 26px
+     
 
 @media (max-width: 400px)
   .main
@@ -337,9 +370,13 @@
   .form__item__text-1 
     margin: 10px 0 
   .calculation__button
-    margin: 19px auto  
-
-
+    margin: 19px auto
+  .steps-item
+    min-height: 154px   
+  .steps-item__img 
+    min-width: 60px
+    height: 60px    
+  
   /*  border-radius: 50%*/
   /*  border: 2px solid $item-phone*/
   /*  background-image: url('../img/phone-receiver.png')   */ 
