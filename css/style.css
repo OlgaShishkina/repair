@@ -1160,6 +1160,7 @@ template {
   line-height: 50px;
   margin: 80px 0;
   background-color: #ffd200;
+  padding: 75px 0;
 }
 
 .steps-arrow {
@@ -1356,6 +1357,7 @@ img {
     font-size: 25px;
     line-height: 38px;
     margin: 30px 0;
+    padding: 45px 5px;
   }
   .steps-item__img {
     min-width: 80px;
@@ -1414,6 +1416,10 @@ img {
   }
   .steps-arrow {
     display: none;
+  }
+  .steps-cheap {
+    line-height: 26px;
+    padding: 35px 5px;
   }
 }
 
@@ -1543,6 +1549,10 @@ img {
     padding: 25px;
     font-size: 25px;
   }
+  .steps-cheap {
+    line-height: 26px;
+    padding: 25px 5px;
+  }
 }
 
 @media (max-width: 501px) {
@@ -1571,6 +1581,9 @@ img {
   .calculation-text {
     width: 400px;
   }
+  .steps-cheap {
+    padding: 45px 5px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1592,6 +1605,7 @@ img {
   }
   .steps-cheap {
     line-height: 26px;
+    padding: 30px 5px;
   }
 }
 
@@ -1715,6 +1729,9 @@ img {
   .steps-item__img {
     min-width: 60px;
     height: 60px;
+  }
+  .steps-cheap {
+    padding: 25px 5px;
   }
   /*  border-radius: 50%*/
   /*  border: 2px solid $item-phone*/
