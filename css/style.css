@@ -1608,6 +1608,9 @@ img {
     line-height: 26px;
     padding: 30px 5px;
   }
+  .card {
+    min-height: 310px;
+  }
 }
 
 @media (max-width: 400px) {
