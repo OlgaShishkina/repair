@@ -1180,17 +1180,13 @@ template {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
   min-height: 640px;
-  background-color: #ffffff;
 }
 
 .contacts {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   min-height: 640px;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  background-color: #e8e8e8;
+  background-color: #ffffff;
 }
 
 .contacts-items {
@@ -1202,15 +1198,13 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 630px;
-  padding-left: 125px;
+  margin-left: 125px;
+  margin-bottom: 127px;
 }
 
 .contacts__title {
   text-align: left;
-  padding-left: 130px;
-  padding-bottom: 80px;
-  padding-top: 80px;
-  padding-right: 50px;
+  margin: 100px 80px 100px 130px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -1314,6 +1308,12 @@ img {
   .steps-arrow {
     display: none;
   }
+  .contacts__title {
+    margin: 80px 40px 90px 100px;
+  }
+  .contacts-items {
+    margin-left: 99px;
+  }
 }
 
 @media (max-width: 997px) {
@@ -1389,6 +1389,13 @@ img {
   .steps {
     padding: 80px 0;
   }
+  .contacts__title {
+    margin: 50px 30px 50px 70px;
+    line-height: 28px;
+  }
+  .contacts-items {
+    margin-left: 70px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1452,8 +1459,26 @@ img {
     width: 100%;
     font-size: 25px;
     line-height: 38px;
-    margin: 30px 0;
+    margin-top: 50px;
     padding: 45px 5px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contacts {
+    margin: 0 auto;
+    min-height: 0;
+  }
+  .contacts-items {
+    margin-bottom: 50px;
   }
 }
 
@@ -1504,7 +1529,7 @@ img {
     height: 160px;
     width: 100%;
     line-height: 35px;
-    margin: 20px 0;
+    margin-top: 20px;
     font-size: 20px;
   }
 }
@@ -1671,6 +1696,9 @@ img {
   .calculation-text {
     width: 400px;
   }
+  .contacts__title {
+    margin: 40px 30px 40px 70px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1819,6 +1847,17 @@ img {
   .steps-cheap {
     padding: 38px 5px;
     font-size: 18px;
+  }
+  .contacts-items {
+    margin-bottom: 20px;
+  }
+  .contacts__title {
+    margin: 30px 20px 30px 50px;
+    line-height: 26px;
+    font-size: 20px;
+  }
+  .contacts-items {
+    margin-left: 50px;
   }
   /*  border-radius: 50%*/
   /*  border: 2px solid $item-phone*/
