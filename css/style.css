@@ -1160,7 +1160,7 @@ template {
   font-size: 32px;
   font-weight: 400;
   line-height: 50px;
-  padding: 100px 0;
+  padding: 90px 0;
   background-color: #ffd200;
 }
 
@@ -1248,6 +1248,13 @@ template {
 }
 
 .contacts-bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.contacts__phone {
+  display: block;
+  color: #333333;
+  text-decoration: none;
   font-family: 'Museo Sans Bold', sans-serif;
 }
 
@@ -1462,7 +1469,6 @@ img {
     width: 100%;
     font-size: 25px;
     line-height: 38px;
-    margin-top: 50px;
     padding: 45px 5px;
   }
   .footer {
@@ -1483,6 +1489,7 @@ img {
   .contacts__title {
     text-align: center;
     font-size: 18px;
+    margin: 70px;
   }
 }
 
@@ -1556,6 +1563,9 @@ img {
   }
   .calculation-text {
     width: 404px;
+  }
+  .contacts__title {
+    margin: 60px;
   }
 }
 
@@ -1669,7 +1679,6 @@ img {
   }
   .steps {
     padding-top: 50px;
-    padding-bottom: 0;
   }
 }
 
@@ -1700,7 +1709,7 @@ img {
     width: 400px;
   }
   .contacts__title {
-    margin: 40px 30px 40px 70px;
+    margin: 50px;
   }
 }
 
@@ -1846,13 +1855,14 @@ img {
   }
   .steps-item {
     min-height: 154px;
+    margin: 20px;
   }
   .steps-cheap {
     font-size: 17px;
-    margin-top: 25px;
+    margin-top: 0;
   }
   .contacts__title {
-    margin: 30px 20px 30px 50px;
+    margin: 30px;
   }
   .contacts-items {
     margin-left: 50px;
