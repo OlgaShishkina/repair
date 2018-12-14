@@ -282,9 +282,9 @@
       <div class="modal__close">&#10006;</div><!--./close--> <!--крестик сверху слева-->
 
       <div class="modal-wrap"> <!-- обертка для окошка в  модальном  окне -->
-     <!--<div class="modal-offer-timur">    дополнительный див -->
+    
       <div class="modal-offer"> <!--весь блок слева-->
-      <div class="modal-offer-wrap"> <!-- обертка для части справа-->
+      <div class="modal-offer-wrap"> <!-- обертка для части слева-->
   
         <div class="modal-offer-item"> <!-- первое предложение-->
 
@@ -326,30 +326,32 @@
             </div> <!--modal-offer-item__text -->
               
             </div>  <!--/.modal-offer-item--> 
-          </div> <!-- обертка для верхней  части справа-->    
+          </div> <!-- обертка для верхней  части слева--> 
+
         <div class="modal-offer-text">
-          <span class="modal-offer-text__title">В стоимость работ входит</span>
+          <h3 class="modal-offer-text__title">В стоимость работ входит</h3>
           <ul class="modal-offer__list">
             <li class="modal-offer__list-disc"> 
               <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
             </li>
             <li class="modal-offer__list-disc"> 
-                <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+                <span class="modal-offer__list-p">Выравнивание стен гипсовыми составами</span>
             </li> 
             <li class="modal-offer__list-disc"> 
-                <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+                <span class="modal-offer__list-p">Грунтовка стен и пола антисептиком, бетоноконтактом</span>
             </li>
             <li class="modal-offer__list-disc"> 
-                <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+                <span class="modal-offer__list-p">Монтаж кафельной плитки на полу и стенах</span>
             </li>
             <li class="modal-offer__list-disc"> 
-                <span class="modal-offer__list-p">Демонтаж старого покрытия стен и пола</span>
+                <span class="modal-offer__list-p">Установка реечного или натяжного потолка, светильников</span>
             </li>
-           
+            <li class="modal-offer__list-disc"> 
+              <span class="modal-offer__list-p">Монтаж двери с коробкой</span>
+          </li>
           </ul>
-
         </div> <!-- modal-offer-text -->  
-     <!-- </div>   modal-offer-timur  дополнительный див-->        
+          
       </div> <!-- modal-offer   часть слева закончилась-->     
 
       <div class="modal-form"> <!--часть справа-->
@@ -357,8 +359,8 @@
         <span class="form__subtitle">Заполните поля ниже&nbsp;- мы свяжемся с Вами</span> 
 
         <form action="mailer/smart.php" method="POST" class="form-input">
-          <input type="text" name="fio" class="input  user_name form__input-1" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" class="input  user_phone  form__input-2" placeholder="Ваш телефон" required>
+          <input type="text" name="fio" class="input  user_name form-input-1" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" class="input  user_phone  form-input-2" placeholder="Ваш телефон" required>
           <button type="submit" class="button  form__button" >Узнать стоимость</button>
         </form>  <!-- это форма для ввода-->
 
@@ -368,11 +370,9 @@
           </div> <!--modal-form-call__text-->
 
           <div class="modal-form-call__phone">
-            <span class="modal-form-call__phone">+7 (8182) 42-51-31</span> 
-            <!-- может здесь достаточно span и div не нужен?-->  
+            +7 (8182) 42-51-31
           </div> <!--"modal-form-call__phone--> 
-        </div> <!--/.modal-form-call   -->
-                 
+        </div> <!--/.modal-form-call   -->                 
       </div><!--modal-form   часть справа закончилась-->
    
       </div><!--modal-wrap-->  
@@ -556,46 +556,44 @@
  </div> 
 
 <footer class="footer" >
- 
-
-    <div class="map">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac74e615818e0fcece947347297b2d055a1038c2498eb817167d99ccb56300999&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script> 
+  <div class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac74e615818e0fcece947347297b2d055a1038c2498eb817167d99ccb56300999&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script> 
      <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.45604829874!2d37.19910331531734!3d55.611479980515774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556d92c52e921%3A0x7069f1a444f51ab2!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMCwg0KLQvtC70YHRgtC-0L_QsNC70YzRhtC10LLQviwg0JzQvtGB0LrQstCwLCAxNDMzNTA!5e0!3m2!1sru!2sru!4v1544519077123"
       width="100%" height="640" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-    </div><!--map-->
+  </div><!--map-->
 
-    <div class="contacts">
+  <div class="contacts">
      <!-- <div class="contacts-wrap">-->        
-        <h2 data-wow-delay="0.2s" class="contacts__title wow fadeIn ">
-            Приезжайте к нам в гости!<br>
-            Проконсультируем Вас <br>
-            по всем вопросам ремонта           
-        </h2>
+    <h2 data-wow-delay="0.2s" class="contacts__title wow fadeIn ">
+      Приезжайте к нам в гости!<br>
+      Проконсультируем Вас <br>
+      по всем вопросам ремонта           
+    </h2>
 
-        <div class="contacts-items">
+    <div class="contacts-items">
 
-          <div class="contacts-items__p">
-            <div data-wow-delay="0.4s"  class="contacts-items__p-img  contacts-items__p-img-1 wow slideInRight">
-            </div>
-            <div data-wow-delay="0.2s"  class="contacts-items__p-text wow fadeInRight">
-              г. Москва <br>
-              <span  class="contacts-bold">
-              ул. Ленина, д. 10,<br>
-              корпус 2, оф. 308
-              </span>
-            </div>
-          </div>  <!--/.contacts-items__p-->
+      <div class="contacts-items__p">
+        <div data-wow-delay="0.4s"  class="contacts-items__p-img  contacts-items__p-img-1 wow slideInRight">
+        </div>
+        <div data-wow-delay="0.2s"  class="contacts-items__p-text wow fadeInRight">
+          г. Москва <br>
+          <span  class="contacts-bold">
+          ул. Ленина, д. 10,<br>
+          корпус 2, оф. 308
+          </span>
+        </div>
+      </div>  <!--/.contacts-items__p-->
                
-          <div class="contacts-items__p">
-            <div data-wow-delay="0.4s"  class="contacts-items__p-img  contacts-items__p-img-2 wow slideInRight">
-            </div>
-            <div data-wow-delay="0.2s"  class="contacts-items__p-text wow fadeInRight">
-              Режим работы:<br>
-              <span  class="contacts-bold">
-              с 9:00 до 18:00
-              </span>
-            </div>
-          </div>  <!--/.contacts-items__p-->
+      <div class="contacts-items__p">
+        <div data-wow-delay="0.4s"  class="contacts-items__p-img  contacts-items__p-img-2 wow slideInRight">
+        </div>
+        <div data-wow-delay="0.2s"  class="contacts-items__p-text wow fadeInRight">
+          Режим работы:<br>
+          <span  class="contacts-bold">
+          с 9:00 до 18:00
+          </span>
+        </div>
+      </div>  <!--/.contacts-items__p-->
 
           <div class="contacts-items__p">
             <div data-wow-delay="0.4s"  class="contacts-items__p-img  contacts-items__p-img-3 wow slideInRight">
@@ -611,12 +609,7 @@
           </div>  <!--/.contacts-items__p-->
         </div> <!--contacts-items -->
     <!--  </div> --><!--contacts-wrap -->
-    </div><!-- contacts-->
-
-
-
-
- 
+    </div><!-- contacts--> 
 </footer>
 
 <script src="js/wow.min.js">

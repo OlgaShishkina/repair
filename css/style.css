@@ -678,7 +678,8 @@ template {
 }
 
 .modal-offer {
-  width: 650px;
+  width: 600px;
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,16 +688,12 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #000000;
-  padding-top: 50px;
-  background-color: #f7f7f7;
-  margin-right: 20px;
-  margin-left: 90px;
+  padding-top: 80px;
   padding-left: 80px;
-  padding-right: 20px;
-}
-
-.modal-form {
-  padding: 0 100px;
+  background-image: url("../img/modal_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .modal-offer-wrap {
@@ -733,11 +730,13 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 6px;
 }
 
 .modal-offer-item__title {
   font-family: 'Museo Sans Bold' , sans-serif;
   font-size: 16px;
+  padding-top: 6px;
 }
 
 .modal-offer-item__title:after {
@@ -746,20 +745,22 @@ template {
   width: 45px;
   height: 3px;
   background-color: #ffd200;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .modal-offer-item__text__line {
   font-family: 'Museo Sans Light' , sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0;
+  font-weight: 400;
 }
 
 .modal-offer-text__title {
   font-family: 'Museo Sans Bold' , sans-serif;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 .modal-offer__list {
@@ -780,6 +781,66 @@ template {
   line-height: 20px;
   margin: 0;
   padding: 0;
+}
+
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 570px;
+  height: 700px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.form__title {
+  margin-top: 80px;
+}
+
+.form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-input-1 {
+  width: 370px;
+  height: 65px;
+}
+
+.form-input-2 {
+  width: 370px;
+  height: 65px;
+}
+
+.form-input__button {
+  width: 368px;
+  height: 70px;
+}
+
+.modal-form-call__text {
+  margin-bottom: 13px;
+}
+
+.modal-form-call__phone {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.price {
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .portfolio {
@@ -1320,6 +1381,20 @@ img {
   }
   .contacts-items {
     margin-left: 99px;
+  }
+  .modal__dialog {
+    overflow-y: auto;
+  }
+  .modal-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal-offer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
