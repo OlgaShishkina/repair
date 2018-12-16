@@ -79,8 +79,8 @@
   <section class="feedback">
     <div class="container">
       <div class="form">
-        <h2 class="form__title">Мы бесплатно разработаем дизайн&nbsp;-проект
-        Вашего жилья и реализуем его!</h2>
+        <div class="form-feedback__title">Мы бесплатно разработаем дизайн&nbsp;-проект
+        Вашего жилья и реализуем его!</div>
         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн&nbsp;-&nbsp;проекта!</span> 
         <form action="mailer/smart.php" method="POST" class="js-ajax"> <!--  был class form-input-->
         <input type="text" name="fio" class="input  user_name form__input-1" placeholder="Ваше имя" required>
@@ -355,6 +355,7 @@
       </div> <!-- modal-offer   часть слева закончилась-->     
 
       <div class="modal-form"> <!--часть справа-->
+        <div class="modal-form-container">
         <h2 class="form__title">Узнайте точную стоимость<br>ремонта по телефону!</h2>
         <span class="form__subtitle">Заполните поля ниже&nbsp;- мы свяжемся с Вами</span> 
 
@@ -372,7 +373,8 @@
           <div class="modal-form-call__phone">
             +7 (8182) 42-51-31
           </div> <!--"modal-form-call__phone--> 
-        </div> <!--/.modal-form-call   -->                 
+        </div> <!--/.modal-form-call   --> 
+        </div> <!--modal-form-container -->               
       </div><!--modal-form   часть справа закончилась-->
    
       </div><!--modal-wrap-->  
