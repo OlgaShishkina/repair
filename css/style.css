@@ -1516,6 +1516,27 @@ img {
   font-family: 'Museo Sans Bold', sans-serif;
 }
 
+@media (max-width: 1570px) {
+  .main img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media (max-width: 1400px) {
+  .main img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1300px) {
+  .main img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 970px;
@@ -1587,6 +1608,12 @@ img {
   }
   .warranty-block__text {
     line-height: 22px;
+  }
+  .main img {
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    z-index: 2;
+    position: relative;
   }
 }
 
