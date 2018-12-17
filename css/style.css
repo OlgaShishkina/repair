@@ -5,11 +5,13 @@
   border: none;
   border-radius: 10px;
   background-color: #ffd200;
+  outline: none;
 }
 
 .button:hover {
   background-color: #ffdb33;
   cursor: pointer;
+  outline: none;
 }
 
 .button:focus {
@@ -21,6 +23,7 @@
   padding: 25px;
   border-radius: 10px;
   border: 1px solid #dddddd;
+  outline: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -807,15 +810,19 @@ template {
 }
 
 .form__title {
-  margin: 80px 30px 50px 40px;
+  margin: auto;
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
+  margin-bottom: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .form__subtitle {
-  margin: 0 16px 50px 20px;
+  margin: auto;
+  margin-bottom: 50px;
   font-size: 16px;
+  line-height: 35px;
 }
 
 .form-input {
@@ -837,7 +844,7 @@ template {
 .form-input-2 {
   width: 370px;
   height: 65px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .form-input__button {
@@ -854,7 +861,11 @@ template {
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 10px;
   font-family: 'Museo Sans Bold', sans-serif;
+  color: #333333;
+  display: block;
+  text-decoration: none;
 }
 
 .price {
@@ -875,6 +886,7 @@ template {
           align-items: center;
   text-align: center;
   margin: 0 auto;
+  padding: 79px 0 63px 0;
 }
 
 .portfolio {
@@ -1552,14 +1564,29 @@ img {
         -ms-flex-order: 2;
             order: 2;
   }
+  .materials {
+    padding: 70px 0;
+  }
   .materials-block {
     width: 330px;
     height: 370px;
   }
-  .materials-block__text {
+  .materials__text {
     line-height: 21px;
     margin-left: 10px;
     margin-top: 10px;
+  }
+  .warranty {
+    padding-bottom: 150px;
+  }
+  .warranty-title {
+    margin: 20px 0 50px 0;
+  }
+  .warranty-block {
+    margin: 0 25px;
+  }
+  .warranty-block__text {
+    line-height: 22px;
   }
 }
 
@@ -1672,6 +1699,18 @@ img {
     margin-left: 7px;
     margin-top: 7px;
   }
+  .modal-form-container {
+    padding: 70px 0 55px 0;
+  }
+  .modal-offer {
+    padding-top: 60px;
+  }
+  .warranty-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1759,6 +1798,23 @@ img {
   }
   .materials-block__text {
     text-align: center;
+  }
+  .materials {
+    padding: 50px 0;
+  }
+  .warranty {
+    padding-bottom: 100px;
+  }
+  .warranty-title {
+    line-height: 35px;
+    margin: 20px 0;
+  }
+  .warranty-block {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .warranty-block__text {
+    font-size: 16px;
   }
 }
 
@@ -2150,6 +2206,13 @@ img {
     margin-left: 7px;
     margin-top: 7px;
     text-align: center;
+  }
+  .warranty {
+    padding-bottom: 70px;
+  }
+  .warranty-title {
+    line-height: 22px;
+    font-size: 18px;
   }
   /*  border-radius: 50%*/
   /*  border: 2px solid $item-phone*/
