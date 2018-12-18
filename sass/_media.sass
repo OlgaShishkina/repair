@@ -16,14 +16,18 @@
   .form__subtitle
     text-align: center
   .slider
-    margin-right: 20px  
+    margin-right: 20px 
+    margin: auto
+    width: 95%
     &__item      
       img
         max-width: 95% 
   .main-text__title
     margin-top: 0
-  .steps-arrow
-    display: none
+  .portfolio
+    background: $light-bg-color 
+    &:before
+      display: none
   .contacts__title
     margin: 80px 10px 90px 90px
     font-size: 20px
@@ -80,8 +84,8 @@
     background: #ffffff 
   .form  
     margin: 0 auto    
-  .slider
-    margin-right: -20px //20
+  //.slider
+    //margin-right: -20px //20
   .calculation    
     background-position: top right
     background-size: cover 
@@ -127,6 +131,8 @@
     margin-left: 60px
   .steps-cheap
     padding: 80px 0
+    font-size: 30px
+    line-height: 45px
   .materials
     padding: 70px 0
     &-wrap  
@@ -137,7 +143,7 @@
       width: 340px
       height: 380px
       margin-bottom: 30px
-      margin-right: 0
+      //margin-right: 0
       &__text
         line-height: 20px
         margin-left: 7px
@@ -222,8 +228,8 @@
       &__text
         font-size: 16px
   .slider
-    margin-right: -10px
-    margin-left: -35px
+    //margin-right: -10px
+    margin-left: -10px
 
 @media (max-width: 601px)
   .container
@@ -355,7 +361,7 @@
     padding: 25px
     font-size: 25px
   .steps-cheap
-    line-height: 30px
+    //line-height: 30px
     padding: 35px 5px  
   .steps
     padding-top: 50px 
@@ -402,7 +408,7 @@
     padding: 25px
     font-size: 25px
   .steps-cheap
-    line-height: 26px
+    //line-height: 26px
     padding: 35px 5px 
   .card
     min-height: 310px  
@@ -441,7 +447,9 @@
     padding: 25px
     font-size: 20px 
   .portfolio
-    padding-top: 40px  
+    padding-top: 40px 
+  .steps-arrow
+    display: none   
   .calculation__input-1
     width: 100%
     height: 55px
@@ -471,7 +479,7 @@
     padding-bottom: 40px
     &__title
       font-size: 22px
-      line-height: 30px;
+      line-height: 30px
     &__subtitle
       line-height: 24px
       font-size: 20px
@@ -521,7 +529,7 @@
         margin-top: 7px 
         text-align: center
   .warranty
-    padding-bottom: 70px
+    padding-bottom: 25px
     &-title 
       line-height: 22px
       font-size: 18px 

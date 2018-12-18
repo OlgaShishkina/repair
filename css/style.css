@@ -1550,6 +1550,8 @@ img {
   }
   .slider {
     margin-right: 20px;
+    margin: auto;
+    width: 95%;
   }
   .slider__item img {
     max-width: 95%;
@@ -1557,7 +1559,10 @@ img {
   .main-text__title {
     margin-top: 0;
   }
-  .steps-arrow {
+  .portfolio {
+    background: #f5f5f5;
+  }
+  .portfolio:before {
     display: none;
   }
   .contacts__title {
@@ -1640,9 +1645,6 @@ img {
   .form {
     margin: 0 auto;
   }
-  .slider {
-    margin-right: -20px;
-  }
   .calculation {
     background-position: top right;
     background-size: cover;
@@ -1708,6 +1710,8 @@ img {
   }
   .steps-cheap {
     padding: 80px 0;
+    font-size: 30px;
+    line-height: 45px;
   }
   .materials {
     padding: 70px 0;
@@ -1728,7 +1732,6 @@ img {
     width: 340px;
     height: 380px;
     margin-bottom: 30px;
-    margin-right: 0;
   }
   .materials-block__text {
     line-height: 20px;
@@ -1853,8 +1856,7 @@ img {
     font-size: 16px;
   }
   .slider {
-    margin-right: -10px;
-    margin-left: -35px;
+    margin-left: -10px;
   }
 }
 
@@ -2039,7 +2041,6 @@ img {
     font-size: 25px;
   }
   .steps-cheap {
-    line-height: 30px;
     padding: 35px 5px;
   }
   .steps {
@@ -2097,7 +2098,6 @@ img {
     font-size: 25px;
   }
   .steps-cheap {
-    line-height: 26px;
     padding: 35px 5px;
   }
   .card {
@@ -2148,6 +2148,9 @@ img {
   }
   .portfolio {
     padding-top: 40px;
+  }
+  .steps-arrow {
+    display: none;
   }
   .calculation__input-1 {
     width: 100%;
@@ -2248,7 +2251,7 @@ img {
     text-align: center;
   }
   .warranty {
-    padding-bottom: 70px;
+    padding-bottom: 25px;
   }
   .warranty-title {
     line-height: 22px;

@@ -12,7 +12,10 @@
  <!-- <script src="../20/js/jquery-2.2.4.min.js"></script>--> 
   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51556496, "init", { id:51556496, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/51556496" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51556496, "init", { id:51556496, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/51556496" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>  
   <header class="header">
@@ -84,7 +87,7 @@
         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн&nbsp;-&nbsp;проекта!</span> 
         <form action="mailer/smart.php" method="POST" class="js-ajax"> <!--  был class form-input-->
         <input type="text" name="fio" class="input  user_name form__input-1" placeholder="Ваше имя" required>
-        <input type="tel" name="phone" class="input  user_phone form__input-2" placeholder="Ваш телефон" required>
+        <input type="tel" name="phone" id="phone" class="input phone user_phone form__input-2" placeholder="Ваш телефон" required>
         <button type="submit" class="button  form__button" >Получить <span class="hidden-xs">бесплатный дизайн&nbsp;-&nbsp;проект</span></button>
         </form>    
        
@@ -361,7 +364,7 @@
 
         <form action="mailer/smart.php" method="POST" class="form-input">
           <input type="text" name="fio" class="input  user_name form-input-1" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" class="input  user_phone  form-input-2" placeholder="Ваш телефон" required>
+          <input type="tel" name="phone" id="phone" class="input phone user_phone  form-input-2" placeholder="Ваш телефон" required>
           <button type="submit" class="button  form__button" >Узнать стоимость</button>
         </form>  <!-- это форма для ввода-->
 
@@ -442,7 +445,7 @@
         </div> <!-- наверное можно было сделать span?-->
         <form action="mailer/smart.php" method="POST" class="calculation-input"> <!-- это секция  с окном ввода данных-->
           <input type="text" name="fio" class="input user_name calculation__input-1" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" class="input user_phone calculation__input-2" placeholder="Ваш телефон" required>
+          <input type="tel" name="phone" id="phone" class="input phone user_phone calculation__input-2" placeholder="Ваш телефон" required>
           <button type="submit" data-wow-delay="3s" data-wow-iteration="2" class="button  calculation__button wow flash" >Рассчитать <span class="hidden-xs">стоимость</span></button>
         </form>
         <div data-wow-delay="4s"  class="calculation-form__phone wow swing">  <!-- это div для телефона, мы его выделяем в отдельный div вот зачеи? -->
@@ -698,6 +701,12 @@
   })
 </script>
 
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $(".phone").mask("+7 (999) 99-99-999");
+  });
+</script>
 </body>
 </html>
 
