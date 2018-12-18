@@ -26,8 +26,8 @@
     margin-top: 0
   .portfolio
     background: $light-bg-color 
-    &:before
-      display: none
+    //&:before
+    //  display: none
   .contacts__title
     margin: 80px 10px 90px 90px
     font-size: 20px
@@ -154,7 +154,11 @@
     padding-top: 60px
   .warranty
     &-wrap 
-      flex-direction: column       
+      flex-direction: column 
+    &-block
+      &__text 
+        margin-bottom: 10px
+
 
 @media (max-width: 768px)
   .container
@@ -288,7 +292,10 @@
       //padding-bottom: 70px
     //&-form 
       //margin-bottom: 0  
-
+  .slider
+    &__item      
+      img
+        max-width: 85% 
 
 @media (max-width: 575px)
   .container
@@ -409,7 +416,7 @@
     font-size: 25px
   .steps-cheap
     //line-height: 26px
-    padding: 35px 5px 
+    padding: 30px 5px 
   .card
     min-height: 310px  
      

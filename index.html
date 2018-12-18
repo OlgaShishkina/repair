@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51556496, "init", { id:51556496, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script>
   <noscript>
-    <div><img src="https://mc.yandex.ru/watch/51556496" style="position:absolute; left:-9999px;" alt="" /></div>
+    <!--<div>-->
+      <img src="https://mc.yandex.ru/watch/51556496" style="position:absolute; left:-9999px;" alt="" />
+    <!--</div>-->
   </noscript> <!-- /Yandex.Metrika counter -->
 </head>
+
 <body>  
   <header class="header">
     <div class="container  header-wrap">
@@ -79,7 +82,7 @@
 
  
 
-  <section class="feedback">
+  <div class="feedback">
     <div class="container">
       <div class="form">
         <div class="form-feedback__title">Мы бесплатно разработаем дизайн&nbsp;-проект
@@ -111,9 +114,9 @@
          </div>  <!-- /. form__item-->             
       </div> <!--form --> 
     </div>     
-  </section>
+  </div>
 <!-- создаем секцию портфолио-->
-<section class="portfolio">
+<div class="portfolio">
   <div class="container">
     <h2 class="section-title section-title_center">Работая с 2007 года, <br>
       мы сделали более 500 ремонтов в квартирах и домах
@@ -146,8 +149,8 @@
       </div>  
     </div> <!--slider -->
   </div> <!--container-->  
-</section>
-<section class="price">
+</div>
+<div class="price">
   <div class="container">
     <h2 class="section-title_center  section-title">
       У нас очень гибкая система скидок<br> на комплексные работы!
@@ -235,7 +238,7 @@
     <!--price-wrap -->
   </div>
   <!-- container-->
-</section>
+</div>
 <!--price-->
 
 <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
@@ -695,6 +698,8 @@
   new WOW().init()
 </script>
 <!-- прописываем скрипт для яндекс метрики для отслеживания js события =нажатия на кнопку перезвоните мне с id "callback"-->
+
+
 <script>
   document.querySelector('#button-callback').addEventListener('click', function(){
     yaCounter51556496.reachGoal('btn'); return true;

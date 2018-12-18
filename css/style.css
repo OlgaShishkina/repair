@@ -1562,9 +1562,6 @@ img {
   .portfolio {
     background: #f5f5f5;
   }
-  .portfolio:before {
-    display: none;
-  }
   .contacts__title {
     margin: 80px 10px 90px 90px;
     font-size: 20px;
@@ -1750,6 +1747,9 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .warranty-block__text {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1934,6 +1934,9 @@ img {
   .contacts__title {
     margin: 60px;
   }
+  .slider__item img {
+    max-width: 85%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2098,7 +2101,7 @@ img {
     font-size: 25px;
   }
   .steps-cheap {
-    padding: 35px 5px;
+    padding: 30px 5px;
   }
   .card {
     min-height: 310px;
