@@ -34,7 +34,7 @@
     line-height: 30px
   .contacts-items
     margin-left: 99px
-  //.modal__dialog
+  
   .modal_visible  
     overflow-y: auto 
     //flex-direction: column
@@ -71,7 +71,8 @@
     margin: 0 auto 
     &-feedback__title 
       text-align: center  
-  
+  .steps-cheap__container
+    width: 970px
 @media (max-width: 997px)
   .container 
     width: 767px     
@@ -83,9 +84,7 @@
   .feedback 
     background: #ffffff 
   .form  
-    margin: 0 auto    
-  //.slider
-    //margin-right: -20px //20
+    margin: 0 auto 
   .calculation    
     background-position: top right
     background-size: cover 
@@ -126,13 +125,11 @@
     padding: 80px 0 
   .contacts__title
     margin: 70px 10px 70px 60px 
-    line-height: 23px  
+    line-height: 26px  
   .contacts-items
     margin-left: 60px
   .steps-cheap
-    padding: 80px 0
-    font-size: 30px
-    line-height: 45px
+    padding: 50px 0
   .materials
     padding: 70px 0
     &-wrap  
@@ -158,7 +155,8 @@
     &-block
       &__text 
         margin-bottom: 10px
-
+  .steps-cheap__container
+    width: 730px
 
 @media (max-width: 768px)
   .container
@@ -199,13 +197,7 @@
     padding-bottom: 20px
   .steps
     padding: 50px 0    
-    &-cheap    
-      height: 200px
-      width: 100%     
-      font-size: 25px
-      line-height: 38px
-      //margin-top: 50px
-      padding: 45px 5px 
+   
   .footer
     flex-direction: column         
   .map
@@ -215,14 +207,14 @@
     min-height: 0
     &__title
       text-align: center
-      font-size: 18px
+      font-size: 20px
       margin: 70px
   .materials-block__text
     text-align: center
   .materials
     padding: 50px 0
   .warranty
-    padding-bottom: 100px
+    padding-bottom: 40px
     &-title 
       line-height: 35px
       margin: 20px 0
@@ -231,10 +223,8 @@
       margin-top: 20px
       &__text
         font-size: 16px
-  .slider
-    //margin-right: -10px
-    margin-left: -10px
-
+  .steps-cheap__container
+    width: 570px
 @media (max-width: 601px)
   .container
     width: 95%
@@ -263,24 +253,14 @@
     &-item
       &__img 
         margin-bottom: 20px  
-  .steps-cheap
-    padding: 40px 5px
-    height: 160px
-    width: 100%     
-    line-height: 35px
-    //margin-top: 20px
-    font-size: 20px      
 
 
 @media (max-width: 590px)
   .container
     width: 85%  
   .form__input-1
-    margin-right: 30px
-    margin-bottom: 30px
     width: 240px
   .form__input-2
-    margin-bottom: 30px
     width: 270px       
   .section-title_center
     padding: 25px
@@ -288,10 +268,8 @@
   .calculation-text   
     width: 404px
   .contacts__title
-    margin: 60px 
-      //padding-bottom: 70px
-    //&-form 
-      //margin-bottom: 0  
+    margin: 60px
+
   .slider
     &__item      
       img
@@ -302,10 +280,8 @@
     width: 85%
   .header-wrap
     display: flex
-    flex-direction: column    
-    /*justify-content: space-between*/
+    flex-direction: column        
     align-items: center
-    /*padding: 8px 0*/
   .header-logo
     margin-bottom: 20px
   .header-text
@@ -319,9 +295,9 @@
     &-text
       max-width: 300px
       margin: auto
-      &__title 
-       text-align: center 
-       font-size: 24px
+      &__title
+        text-align: center 
+        font-size: 24px
   .main-text__title span
     font-size: 16 px
     display: 
@@ -345,61 +321,52 @@
     margin: 10px 0 
   .section-title_center
     padding: 25px
-    font-size: 25px  
-
-@media (max-width: 542px)
-  .form__input-1
-    margin-right: 30px
-    margin-bottom: 30px
-    width: 100%
-  .form__input-2
-    margin-bottom: 30px
-    width: 100%  
-
-@media (max-width: 524px)
-  .form__input-1
-    margin-right: 30px
-    margin-bottom: 30px
-    width: 100%
-  .form__input-2
-    margin-bottom: 30px
-    width: 100% 
-  .section-title_center
-    padding: 25px
     font-size: 25px
   .steps-cheap
-    //line-height: 30px
-    padding: 35px 5px  
+    padding: 30px 0
+  .steps-cheap__container
+    width: 470px
+  .steps-cheap__text
+    font-size: 24px
+    
+@media (max-width: 524px)
+  .section-title_center
+    padding: 25px
+    font-size: 25px 
   .steps
     padding-top: 50px 
-    padding-bottom: 0       
+    padding-bottom: 0  
+    
 
 
-@media (max-width: 501px)
+@media (max-width: 510px)
   .container
     width: 85%
   .feedback
     padding: 75px 0 
-  .form__title 
-    font-size: 20px    
-  .form__input-1
-    margin-right: 30px
-    margin-bottom: 30px
-    width: 100%
-  .form__input-2
-    margin-bottom: 30px
-    width: 100%  
+  .form
+    &__title 
+      font-size: 20px    
+    &__input-1
+      margin-right: 30px
+      margin-bottom: 30px
+      width: 100%
+    &__input-2
+      margin-bottom: 30px
+      width: 100%  
   .section-title_center
     padding: 25px
     font-size: 25px 
-  .calculation-text
-    width: 400px 
-  //.steps-cheap    
-  //  padding: 35px 5px 
+  .calculation
+    &-text
+      width: 400px    
+  
   .contacts__title 
     margin: 50px
-   
-            
+  .steps-cheap
+    padding: 42px 0
+    line-height: 34px         
+    font-size: 18px
 
 @media (max-width: 450px)
   .container
@@ -415,13 +382,20 @@
     padding: 25px
     font-size: 25px
   .steps-cheap
-    //line-height: 26px
-    padding: 30px 5px 
+    padding: 20px 0
   .card
     min-height: 310px  
-     
+  .steps-cheap__container
+    width: 320px 
+  .steps-cheap__text
+    font-size: 16px
+    +bold 
+    line-height: 30px
+
 
 @media (max-width: 400px)
+  .header-logo 
+    margin-bottom: 10px
   .main
     padding: 25px 0
     &-text 
@@ -438,7 +412,7 @@
     line-height: 26px
     margin-bottom: 25px
   .form__subtitle
-    line-height: 26px
+    line-height: 24px
     margin-bottom: 30px
   .hidden-xs
     display: none
@@ -451,12 +425,13 @@
     width: 100%
     height: 65px
   .section-title_center
-    padding: 25px
+    padding: 20px 0
     font-size: 20px 
+  .section-subtitle 
+    font-size: 18px  
   .portfolio
-    padding-top: 40px 
-  .steps-arrow
-    display: none   
+    padding-top: 30px 
+
   .calculation__input-1
     width: 100%
     height: 55px
@@ -475,9 +450,7 @@
     margin-bottom: 0 
   .calculation-form__title
     font-size: 20px
-    line-height: 24px
-    //margin-top: 30px
-    //margin-bottom: 20px  
+    line-height: 30px   
   .calculation-form__subtitle
     font-size: 18px
     line-height: 24px
@@ -516,14 +489,16 @@
     min-height: 154px 
     margin: 20px
   .steps-cheap
-    font-size: 17px
+    font-size: 18px
     margin-top: 0
+    padding: 42px 0
+    line-height: 24px
   .contacts__title 
-    margin: 30px 
-    //line-height: 23px
-    //font-size: 18px
+    margin: 30px 0
+    font-size: 20px 
+    line-height: 26px
   .contacts-items 
-    margin-left: 50px
+    margin-left: 30px
   .materials
     padding: 30px 0
     &-block
@@ -538,8 +513,20 @@
   .warranty
     padding-bottom: 25px
     &-title 
-      line-height: 22px
-      font-size: 18px 
+      line-height: 26px
+      font-size: 20px 
+  .arrow 
+    width: 40px
+    height: 14px   
+  .price 
+    padding: 20px 0
+  .form__item__img-4 
+    display: none
+  .form-feedback__title 
+    font-size: 20px
+    line-height: 30px
+  .steps-cheap__container
+    width: 300px
   
   /*  border-radius: 50%*/
   /*  border: 2px solid $item-phone*/

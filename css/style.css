@@ -573,6 +573,7 @@ template {
   font-size: 16px;
   display: block;
   margin-bottom: 50px;
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .form__input-1 {
@@ -1271,16 +1272,15 @@ template {
 }
 
 .steps-cheap {
-  display: block;
-  height: 280px;
-  width: auto;
-  text-align: center;
-  font-family: "Museo Sans Cyrl -300";
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 50px;
-  padding: 90px 0;
   background-color: #ffd200;
+  padding: 90px 0;
+}
+
+.steps-cheap__text {
+  text-align: center;
+  font-size: 32px;
+  line-height: 50px;
+  margin: auto;
 }
 
 .steps-arrow {
@@ -1416,7 +1416,6 @@ template {
 }
 
 .materials-block__text {
-  font-family: "Museo Sans Cyrl -300";
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
@@ -1473,7 +1472,6 @@ template {
 
 .warranty-block__text {
   text-align: center;
-  font-family: "Museo Sans Cyrl -300";
   color: #000000;
   font-size: 18px;
   font-weight: 400;
@@ -1626,6 +1624,9 @@ img {
   .form-feedback__title {
     text-align: center;
   }
+  .steps-cheap__container {
+    width: 970px;
+  }
 }
 
 @media (max-width: 997px) {
@@ -1700,15 +1701,13 @@ img {
   }
   .contacts__title {
     margin: 70px 10px 70px 60px;
-    line-height: 23px;
+    line-height: 26px;
   }
   .contacts-items {
     margin-left: 60px;
   }
   .steps-cheap {
-    padding: 80px 0;
-    font-size: 30px;
-    line-height: 45px;
+    padding: 50px 0;
   }
   .materials {
     padding: 70px 0;
@@ -1749,6 +1748,9 @@ img {
   }
   .warranty-block__text {
     margin-bottom: 10px;
+  }
+  .steps-cheap__container {
+    width: 730px;
   }
 }
 
@@ -1808,13 +1810,6 @@ img {
   .steps {
     padding: 50px 0;
   }
-  .steps-cheap {
-    height: 200px;
-    width: 100%;
-    font-size: 25px;
-    line-height: 38px;
-    padding: 45px 5px;
-  }
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1832,7 +1827,7 @@ img {
   }
   .contacts__title {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     margin: 70px;
   }
   .materials-block__text {
@@ -1842,7 +1837,7 @@ img {
     padding: 50px 0;
   }
   .warranty {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
   }
   .warranty-title {
     line-height: 35px;
@@ -1855,8 +1850,8 @@ img {
   .warranty-block__text {
     font-size: 16px;
   }
-  .slider {
-    margin-left: -10px;
+  .steps-cheap__container {
+    width: 570px;
   }
 }
 
@@ -1902,13 +1897,6 @@ img {
   .steps-item__img {
     margin-bottom: 20px;
   }
-  .steps-cheap {
-    padding: 40px 5px;
-    height: 160px;
-    width: 100%;
-    line-height: 35px;
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 590px) {
@@ -1916,12 +1904,9 @@ img {
     width: 85%;
   }
   .form__input-1 {
-    margin-right: 30px;
-    margin-bottom: 30px;
     width: 240px;
   }
   .form__input-2 {
-    margin-bottom: 30px;
     width: 270px;
   }
   .section-title_center {
@@ -1951,11 +1936,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /*justify-content: space-between*/
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /*padding: 8px 0*/
   }
   .header-logo {
     margin-bottom: 20px;
@@ -2015,36 +1998,21 @@ img {
     padding: 25px;
     font-size: 25px;
   }
-}
-
-@media (max-width: 542px) {
-  .form__input-1 {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 100%;
+  .steps-cheap {
+    padding: 30px 0;
   }
-  .form__input-2 {
-    margin-bottom: 30px;
-    width: 100%;
+  .steps-cheap__container {
+    width: 470px;
+  }
+  .steps-cheap__text {
+    font-size: 24px;
   }
 }
 
 @media (max-width: 524px) {
-  .form__input-1 {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 100%;
-  }
-  .form__input-2 {
-    margin-bottom: 30px;
-    width: 100%;
-  }
   .section-title_center {
     padding: 25px;
     font-size: 25px;
-  }
-  .steps-cheap {
-    padding: 35px 5px;
   }
   .steps {
     padding-top: 50px;
@@ -2052,7 +2020,7 @@ img {
   }
 }
 
-@media (max-width: 501px) {
+@media (max-width: 510px) {
   .container {
     width: 85%;
   }
@@ -2081,6 +2049,11 @@ img {
   .contacts__title {
     margin: 50px;
   }
+  .steps-cheap {
+    padding: 42px 0;
+    line-height: 34px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2101,14 +2074,25 @@ img {
     font-size: 25px;
   }
   .steps-cheap {
-    padding: 30px 5px;
+    padding: 20px 0;
   }
   .card {
     min-height: 310px;
   }
+  .steps-cheap__container {
+    width: 320px;
+  }
+  .steps-cheap__text {
+    font-size: 16px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 400px) {
+  .header-logo {
+    margin-bottom: 10px;
+  }
   .main {
     padding: 25px 0;
   }
@@ -2129,7 +2113,7 @@ img {
     margin-bottom: 25px;
   }
   .form__subtitle {
-    line-height: 26px;
+    line-height: 24px;
     margin-bottom: 30px;
   }
   .hidden-xs {
@@ -2146,14 +2130,14 @@ img {
     height: 65px;
   }
   .section-title_center {
-    padding: 25px;
+    padding: 20px 0;
     font-size: 20px;
   }
-  .portfolio {
-    padding-top: 40px;
+  .section-subtitle {
+    font-size: 18px;
   }
-  .steps-arrow {
-    display: none;
+  .portfolio {
+    padding-top: 30px;
   }
   .calculation__input-1 {
     width: 100%;
@@ -2179,7 +2163,7 @@ img {
   }
   .calculation-form__title {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
   }
   .calculation-form__subtitle {
     font-size: 18px;
@@ -2230,14 +2214,18 @@ img {
     margin: 20px;
   }
   .steps-cheap {
-    font-size: 17px;
+    font-size: 18px;
     margin-top: 0;
+    padding: 42px 0;
+    line-height: 24px;
   }
   .contacts__title {
-    margin: 30px;
+    margin: 30px 0;
+    font-size: 20px;
+    line-height: 26px;
   }
   .contacts-items {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .materials {
     padding: 30px 0;
@@ -2257,8 +2245,25 @@ img {
     padding-bottom: 25px;
   }
   .warranty-title {
-    line-height: 22px;
-    font-size: 18px;
+    line-height: 26px;
+    font-size: 20px;
+  }
+  .arrow {
+    width: 40px;
+    height: 14px;
+  }
+  .price {
+    padding: 20px 0;
+  }
+  .form__item__img-4 {
+    display: none;
+  }
+  .form-feedback__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .steps-cheap__container {
+    width: 300px;
   }
   /*  border-radius: 50%*/
   /*  border: 2px solid $item-phone*/

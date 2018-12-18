@@ -119,7 +119,7 @@
 <div class="portfolio">
   <div class="container">
     <h2 class="section-title section-title_center">Работая с 2007 года, <br>
-      мы сделали более 500 ремонтов в квартирах и домах
+      мы сделали более 500 ремонтов в квартирах и&nbsp;домах
     </h2>
     
     <div class="slider">
@@ -274,15 +274,15 @@
               breakpoint: 768,
               settings: {
                   slidesToShow: 1,
-                  slidesToScroll: 1,
-                  prevArrow: null,
-                  nextArrow: null
+                  slidesToScroll: 1                  
               }
             } 
           ]
         });        
       });
 </script> 
+<!--prevArrow: null,
+    nextArrow: null -->
   <div class="modal" id="modal-callback"> <!-- начало модального окна-->
     <div class="modal__dialog"> <!-- окошко посередине-->
       <div class="modal__close">&#10006;</div><!--./close--> <!--крестик сверху слева-->
@@ -563,9 +563,14 @@
 </section><!--steps-->
 
   <div class="steps-cheap"> 
-           Ремонт обойдется Вам дешевле, так как<br>
-        мы используем качественные материалы по оптовым ценам
+    <div class="container steps-cheap__container">
+      <div class="steps-cheap__text ">
+        Ремонт обойдется Вам дешевле, так как 
+        мы используем качественные материалы по&nbsp;оптовым ценам
+      </div>
+    </div>    
   </div> 
+
 <section class="materials"> <!--this is a new section-->
   <div class="container"> <!-- this is  for alignment all content in whole site-->
     <div class="materials-wrap"> <!-- this is for positioning blocks with photos by flex -->
