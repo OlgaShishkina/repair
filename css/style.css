@@ -890,7 +890,7 @@ template {
 }
 
 .portfolio {
-  background: url("../img/bg_slider.png") no-repeat;
+  background: url("../img/bg_portfolio.jpg") no-repeat;
   padding: 100px 0;
   z-index: 1;
   position: relative;
@@ -908,7 +908,7 @@ template {
 }
 
 .slider__item {
-  margin: auto;
+  text-align: center;
 }
 
 .slider__item img {
@@ -1551,7 +1551,7 @@ img {
   .slider {
     margin-right: 20px;
   }
-  .slider__item {
+  .slider__item img {
     max-width: 95%;
   }
   .main-text__title {
@@ -1614,6 +1614,15 @@ img {
             transform-origin: top left;
     z-index: 2;
     position: relative;
+  }
+  .feedback {
+    background: #ffffff;
+  }
+  .form {
+    margin: 0 auto;
+  }
+  .form-feedback__title {
+    text-align: center;
   }
 }
 
@@ -1842,6 +1851,10 @@ img {
   }
   .warranty-block__text {
     font-size: 16px;
+  }
+  .slider {
+    margin-right: -10px;
+    margin-left: -35px;
   }
 }
 

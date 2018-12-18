@@ -18,8 +18,8 @@
   .slider
     margin-right: 20px  
     &__item      
-      image:
-      max-width: 95% 
+      img
+        max-width: 95% 
   .main-text__title
     margin-top: 0
   .steps-arrow
@@ -61,7 +61,12 @@
     transform-origin: top left
     z-index: 2
     position: relative
- 
+  .feedback 
+    background: #ffffff 
+  .form 
+    margin: 0 auto 
+    &-feedback__title 
+      text-align: center  
   
 @media (max-width: 997px)
   .container 
@@ -216,7 +221,9 @@
       margin-top: 20px
       &__text
         font-size: 16px
-
+  .slider
+    margin-right: -10px
+    margin-left: -35px
 
 @media (max-width: 601px)
   .container
