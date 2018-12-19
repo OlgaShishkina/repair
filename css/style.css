@@ -890,6 +890,81 @@ template {
   padding: 79px 0 63px 0;
 }
 
+.modal-thank {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+.modal-thank__dialog {
+  max-width: 1000px;
+  height: 300px;
+  background-color: #ffffff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.modal-thank-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-thank-block {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000000;
+  padding: 30px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-thank-title {
+  margin-bottom: 20px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 30px;
+}
+
+.modal-thank-subtitle {
+  margin-bottom: 40px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+}
+
+.modal-thank__button {
+  width: 368px;
+  height: 70px;
+  font-size: 18px;
+}
+
 .portfolio {
   background: url("../img/bg_portfolio.jpg") no-repeat;
   padding: 100px 0;

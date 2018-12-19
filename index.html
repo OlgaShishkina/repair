@@ -12,15 +12,17 @@
  <!-- <script src="../20/js/jquery-2.2.4.min.js"></script>--> 
   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51556496, "init", { id:51556496, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script>
-  <noscript>
-    <!--<div>-->
-      <img src="https://mc.yandex.ru/watch/51556496" style="position:absolute; left:-9999px;" alt="" />
-    <!--</div>-->
-  </noscript> <!-- /Yandex.Metrika counter -->
+ 
 </head>
 
-<body>  
+<body>
+   <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51556496, "init", { id:51556496, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script>
+   <noscript>
+      <!--<div>-->
+        <img src="https://mc.yandex.ru/watch/51556496" style="position:absolute; left:-9999px;" alt="" />
+      <!--</div>-->
+    </noscript> <!-- /Yandex.Metrika counter -->
+
   <header class="header">
     <div class="container  header-wrap">
       <div class="header-logo">
@@ -90,7 +92,7 @@
         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн&nbsp;-&nbsp;проекта!</span> 
         <form action="mailer/smart.php" method="POST" class="js-ajax"> <!--  был class form-input-->
         <input type="text" name="fio" class="input  user_name form__input-1" placeholder="Ваше имя" required>
-        <input type="tel" name="phone" id="phone" class="input phone user_phone form__input-2" placeholder="Ваш телефон" required>
+        <input type="tel" name="phone" class="input phone user_phone form__input-2" placeholder="Ваш телефон" required>
         <button type="submit" class="button  form__button" >Получить <span class="hidden-xs">бесплатный дизайн&nbsp;-&nbsp;проект</span></button>
         </form>    
        
@@ -173,7 +175,7 @@
         </a>
       </div> <!-- card-->
 
-      <div class="card wow fadeInUp"data-wow-delay="0.4s" >
+      <div class="card wow fadeInUp" data-wow-delay="0.4s" >
         <div class="card__img-wrap">
         <img src="img/price/price2.jpg" alt="price2" class="card__img">
         </div> <!--card__img-wrap  это мы обернули картинку, чтобы задать свойство градиента для картинки -->
@@ -185,7 +187,7 @@
         </a>
       </div> <!-- card-->
 
-      <div class="card wow fadeInUp"data-wow-delay="0.6s" >
+      <div class="card wow fadeInUp" data-wow-delay="0.6s" >
         <div class="card__img-wrap">
         <img src="img/price/price3.jpg" alt="price3" class="card__img">
         </div> <!--card__img-wrap  это мы обернули картинку, чтобы задать свойство градиента для картинки -->
@@ -210,7 +212,7 @@
         </div>
         <!-- card-->
 
-        <div class="card wow fadeInUp"data-wow-delay="1s" >
+        <div class="card wow fadeInUp" data-wow-delay="1s" >
           <div class="card__img-wrap">
           <img src="img/price/price5.jpg" alt="price5" class="card__img">
           </div> <!--card__img-wrap  это мы обернули картинку, чтобы задать свойство градиента для картинки -->
@@ -222,7 +224,7 @@
         </div>
         <!-- card-->
 
-        <div class="card wow fadeInUp"data-wow-delay="1.2s" >
+        <div class="card wow fadeInUp" data-wow-delay="1.2s" >
           <div class="card__img-wrap"> 
           <img src="img/price/price6.jpg" alt="price6" class="card__img">
           </div> <!--card__img-wrap  это мы обернули картинку, чтобы задать свойство градиента для картинки -->  
@@ -367,7 +369,7 @@
 
         <form action="mailer/smart.php" method="POST" class="form-input">
           <input type="text" name="fio" class="input  user_name form-input-1" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" id="phone" class="input phone user_phone  form-input-2" placeholder="Ваш телефон" required>
+          <input type="tel" name="phone" class="input phone user_phone  form-input-2" placeholder="Ваш телефон" required>
           <button type="submit" class="button  form__button" >Узнать стоимость</button>
         </form>  <!-- это форма для ввода-->
 
@@ -403,6 +405,19 @@
     });  
   </script> 
 
+  
+<!-- 
+  <script>
+    $(document).ready(function() { 
+      $('#button-callback').on('click', function() {        
+        $('#modal-callback').toggleClass('modal_visible') //# это обращение к  id
+      }); 
+      $('.modal__close').on('click', function() {        
+        $('#modal-callback').toggleClass('modal_visible')
+      });          
+    });  
+  </script> -->
+
   <div class="calculation"> <!-- создала новую секцию-->
     <div class="calculation-container container">
     <!-- это обертка для этой секции для ограничения контента и выравнивания его по центру-->
@@ -427,7 +442,7 @@
             У Вас новостройка или вторичное жилье?
             </span>
           </li>  
-          <li data-wow-delay="0.9s"class="calculation-text__item wow slideInLeft">
+          <li data-wow-delay="0.9s" class="calculation-text__item wow slideInLeft">
             <span class="calculation-text__p">
               Где находится помещение, в котором будет производиться ремонт?
             </span>
@@ -448,7 +463,7 @@
         </div> <!-- наверное можно было сделать span?-->
         <form action="mailer/smart.php" method="POST" class="calculation-input"> <!-- это секция  с окном ввода данных-->
           <input type="text" name="fio" class="input user_name calculation__input-1" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" id="phone" class="input phone user_phone calculation__input-2" placeholder="Ваш телефон" required>
+          <input type="tel" name="phone" class="input phone user_phone calculation__input-2" placeholder="Ваш телефон" required>
           <button type="submit" data-wow-delay="3s" data-wow-iteration="2" class="button  calculation__button wow flash" >Рассчитать <span class="hidden-xs">стоимость</span></button>
         </form>
         <div data-wow-delay="4s"  class="calculation-form__phone wow swing">  <!-- это div для телефона, мы его выделяем в отдельный div вот зачеи? -->
@@ -467,14 +482,19 @@
       data: $(this).serialize()
     }).done(function() {
       $(this).find("input").val("");
-      alert("Сообщение успешно отправлено");
+      $('.modal-thank').show();
+      $('.modal-thank__button').on("click", function(){
+      $('.modal-thank').hide();  
+      })
       $("form").trigger("reset");
     });
     return false;
   });
 </script>
 
-
+<!--
+  alert("Сообщение успешно отправлено");
+-->
 
 <section class="steps"> 
   <div class="steps-container container">
@@ -496,7 +516,7 @@
           </div><!--steps-item__text-->
       </div> <!-- steps-item-->
       
-      <div class="steps-arrow wow fadeInLeft"" data-wow-delay="0.5s" ><!-- это я создаю item  для стрелки-->
+      <div class="steps-arrow wow fadeInLeft" data-wow-delay="0.5s" ><!-- это я создаю item  для стрелки-->
         <div class="steps-arrow-img">
           <img src="img/steps/steps_arrow.png" alt="step_arrow">
         </div><!--steps-arrow-img" это элемент со стрелкой на заднем фоне-->
@@ -511,7 +531,7 @@
         </div><!--steps-item__text-->
       </div> <!-- steps-item-->
           
-      <div class="steps-arrow wow fadeInLeft"" data-wow-delay="1.5s" ><!-- это я создаю item  для стрелки-->
+      <div class="steps-arrow wow fadeInLeft" data-wow-delay="1.5s" ><!-- это я создаю item  для стрелки-->
         <div class="steps-arrow-img">
           <img src="img/steps/steps_arrow.png" alt="step_arrow">
         </div><!--steps-arrow-img" это элемент со стрелкой на заднем фоне-->
@@ -526,7 +546,7 @@
         </div><!--steps-item__text-->
       </div> <!-- steps-item-->
       
-      <div class="steps-arrow wow fadeInLeft"" data-wow-delay="2.5s" ><!-- это я создаю item  для стрелки-->
+      <div class="steps-arrow wow fadeInLeft" data-wow-delay="2.5s" ><!-- это я создаю item  для стрелки-->
         <div class="steps-arrow-img">
           <img src="img/steps/steps_arrow.png" alt="step_arrow">
         </div><!--steps-arrow-img" это элемент со стрелкой на заднем фоне-->
@@ -571,7 +591,7 @@
     </div>    
   </div> 
 
-<section class="materials"> <!--this is a new section-->
+<div class="materials"> <!--this is a new section-->
   <div class="container"> <!-- this is  for alignment all content in whole site-->
     <div class="materials-wrap"> <!-- this is for positioning blocks with photos by flex -->
       <div class="materials-block materials-block-1" ><!-- this is a block with  a text and an image-->
@@ -595,7 +615,7 @@
       </div><!--materials-block -->     
     </div> <!-- materials-wrap-->
   </div><!-- container-->
-</section><!-- materials-->
+</div><!-- materials-->
 
 <section class="warranty">
   <div class="warranty-container container">
@@ -637,12 +657,13 @@
       </div><!-- warranty-block-->
 
     </div> <!--warranty-wrap -->
+  </div>  
 </section><!-- warranty-->
 
 
 <footer class="footer" >
   <div class="map">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac74e615818e0fcece947347297b2d055a1038c2498eb817167d99ccb56300999&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script> 
+    <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac74e615818e0fcece947347297b2d055a1038c2498eb817167d99ccb56300999&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script> 
      <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.45604829874!2d37.19910331531734!3d55.611479980515774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556d92c52e921%3A0x7069f1a444f51ab2!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMCwg0KLQvtC70YHRgtC-0L_QsNC70YzRhtC10LLQviwg0JzQvtGB0LrQstCwLCAxNDMzNTA!5e0!3m2!1sru!2sru!4v1544519077123"
       width="100%" height="640" frameborder="0" style="border:0" allowfullscreen></iframe> -->
   </div><!--map-->
@@ -717,8 +738,42 @@
     $(".phone").mask("+7 (999) 99-99-999");
   });
 </script>
+
+<div class="modal-thank " id="modal-thank-callback"> <!-- начало модального окна благодарности-->
+  <div class="modal-thank__dialog "> <!-- окошко посередине-->
+    <div class="modal-thank-wrap "> <!-- обертка для окошка в  модальном  окне --> 
+    <div class="modal-thank-block">        
+    <div class="modal-thank-title"> <!--заголовок 1-->
+      Большое спасибо!
+    </div>
+    <div class="modal-thank-subtitle"> <!-- заголовок 2-->
+      Ваша заявка принята.
+    </div>    
+     <button type="submit" class="button modal-thank__button" >ОК</button> 
+    </div>     
+    </div><!--modal-thank-wrap-->  
+  </div> <!--./ modal-thank__dialog-->
+</div><!--./modal-thank-->
+<script>
+    $('form').submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        $('.modal-thank').show();
+        $('.modal-thank__button').on("click", function(){
+        $('.modal-thank').hide();  
+        })
+        $("form").trigger("reset");
+      });
+      return false;
+    });
+</script>
+
 </body>
 </html>
 
 <!--ym(51556496, 'reachGoal', 'btn'); return true; -->
-
