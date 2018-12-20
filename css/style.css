@@ -458,12 +458,6 @@ template {
   margin: 0;
 }
 
-.main-text__title span {
-  font-size: 20px;
-  display: block;
-  margin-top: 20px;
-}
-
 .main-img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -477,7 +471,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 330px;
+  max-width: 350px;
   margin-top: 52px;
 }
 
@@ -517,6 +511,12 @@ template {
 .main-advantages__text {
   font-size: 14px;
   font-weight: 400;
+}
+
+.main-text__title-add {
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
 }
 
 .feedback {
@@ -669,6 +669,7 @@ template {
 
 .slider__item {
   text-align: center;
+  outline: none;
 }
 
 .slider__item img {
@@ -814,79 +815,6 @@ template {
   line-height: 45px;
 }
 
-.thank {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.52);
-  left: 0;
-  top: 0;
-  z-index: 99;
-  display: none;
-}
-
-.thank-dialog {
-  max-width: 555px;
-  height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 10px;
-  margin: auto;
-  margin-top: 50px;
-  background-color: #ffffff;
-}
-
-.thank-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.thank-block {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #000000;
-  padding: 30px 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.thank-title {
-  margin-bottom: 20px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-size: 30px;
-}
-
-.thank-subtitle {
-  margin-bottom: 40px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-size: 22px;
-}
-
-.thank__button {
-  width: 368px;
-  height: 70px;
-  font-size: 18px;
-}
-
 .modal {
   position: fixed;
   width: 100%;
@@ -970,6 +898,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal-offer-item__img {
@@ -1048,7 +979,7 @@ template {
   height: 700px;
 }
 
-.form__title {
+.modal-form__title {
   margin: auto;
   font-size: 22px;
   font-weight: 400;
@@ -1057,14 +988,14 @@ template {
   font-family: 'Museo Sans Bold', sans-serif;
 }
 
-.form__subtitle {
+.modal-form__subtitle {
   margin: auto;
   margin-bottom: 50px;
   font-size: 16px;
   line-height: 35px;
 }
 
-.form-input {
+.modal-form-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1074,21 +1005,21 @@ template {
           flex-direction: column;
 }
 
-.form-input-1 {
+.modal-form-input-1 {
   width: 370px;
   height: 65px;
   margin-bottom: 15px;
 }
 
-.form-input-2 {
+.modal-form-input-2 {
   width: 370px;
   height: 65px;
   margin-bottom: 33px;
 }
 
-.form-input__button {
+.modal-form__button {
   width: 368px;
-  height: 70px;
+  height: 65px;
   margin-bottom: 33px;
 }
 
@@ -1126,6 +1057,79 @@ template {
   text-align: center;
   margin: 0 auto;
   padding: 79px 0 63px 0;
+}
+
+.thank {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: none;
+}
+
+.thank-dialog {
+  max-width: 555px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+}
+
+.thank-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thank-block {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000000;
+  padding: 30px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thank-title {
+  margin-bottom: 20px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 30px;
+}
+
+.thank-subtitle {
+  margin-bottom: 40px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+}
+
+.thank__button {
+  width: 368px;
+  height: 70px;
+  font-size: 18px;
 }
 
 .calculation {
@@ -1628,7 +1632,7 @@ img {
     max-width: 95%;
   }
   .main-text__title {
-    margin-top: 0;
+    margin-top: 10px;
   }
   .portfolio {
     background: #f5f5f5;
@@ -1691,6 +1695,9 @@ img {
   .feedback {
     background: #ffffff;
   }
+  .feedback:before {
+    width: 65%;
+  }
   .form {
     margin: 0 auto;
   }
@@ -1700,15 +1707,48 @@ img {
   .steps-cheap__container {
     width: 970px;
   }
+  .steps-arrow {
+    display: none;
+  }
+  .modal-form {
+    width: 600px;
+  }
+  .modal-form-container {
+    padding: 70px 0 55px 0;
+    width: 350px;
+  }
+  .modal-offer {
+    padding-top: 60px;
+    width: 500px;
+    height: 650px;
+  }
+  .modal-form {
+    width: 500px;
+    height: 650px;
+  }
 }
 
 @media (max-width: 997px) {
   .container {
-    width: 767px;
+    width: 730px;
   }
-  .main-text__title {
-    font-size: 30px;
-    line-height: 36px;
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    text-align: center;
+  }
+  .main-text-title {
+    text-align: center;
+    margin: 0;
+  }
+  .main-advantages {
+    margin: auto;
+    margin-top: 20px;
+    text-align: left;
   }
   .feedback {
     background: #ffffff;
@@ -1807,12 +1847,6 @@ img {
     margin-left: 7px;
     margin-top: 7px;
   }
-  .modal-form-container {
-    padding: 70px 0 55px 0;
-  }
-  .modal-offer {
-    padding-top: 60px;
-  }
   .warranty-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1838,11 +1872,13 @@ img {
             flex-direction: column;
   }
   .main-text {
-    max-width: 400px;
-    margin: auto;
+    margin-top: 30px;
   }
   .main-text-title {
     text-align: center;
+  }
+  .main-img {
+    margin-top: 43px;
   }
   .form__item__phone {
     text-align: center;
@@ -1925,6 +1961,47 @@ img {
   }
   .steps-cheap__container {
     width: 570px;
+  }
+  .modal-form {
+    width: 420px;
+    height: 600px;
+  }
+  .modal-offer {
+    width: 420px;
+    height: 600px;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .modal-form-container {
+    padding: 50px 0 50px 0;
+    width: 350px;
+  }
+  .modal-form__title {
+    margin-bottom: 20px;
+  }
+  .modal-form__subtitle {
+    font-size: 16px;
+    line-height: 35px;
+    margin-bottom: 42px;
+  }
+  .modal-form-input {
+    width: 100%;
+  }
+  .modal-form-input-1 {
+    width: 340px;
+    padding: 22px;
+  }
+  .modal-form-input-2 {
+    width: 340px;
+    padding: 22px;
+  }
+  .modal-form__button {
+    width: 340px;
+    margin-top: 0;
+    padding: 22px;
+  }
+  .modal-form-call__text {
+    margin-top: 25px;
   }
 }
 
@@ -2030,12 +2107,14 @@ img {
     margin: 10px 0;
   }
   .main-text {
-    max-width: 300px;
     margin: auto;
+    margin-top: 25px;
+    width: 400px;
   }
   .main-text__title {
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
+    line-height: 30px;
   }
   .main-text__title span {
     font-size: 16 px;
@@ -2079,6 +2158,9 @@ img {
   }
   .steps-cheap__text {
     font-size: 24px;
+  }
+  .modal-form__button {
+    margin-bottom: 0;
   }
 }
 
@@ -2159,6 +2241,54 @@ img {
     font-size: 16px;
     font-family: 'Museo Sans Bold', sans-serif;
     line-height: 30px;
+  }
+  .modal-form-container {
+    padding: 10px 0 10px 0;
+    width: 260px;
+  }
+  .modal-form {
+    width: 290px;
+    height: 550px;
+  }
+  .modal-offer {
+    width: 290px;
+    height: 550px;
+    padding-top: 10px;
+  }
+  .modal-form-input-1 {
+    width: 100%;
+    padding: 10px;
+  }
+  .modal-form-input-2 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .modal-form__button {
+    width: 100%;
+    padding: 10px;
+  }
+  .modal-form__subtitle {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 200px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .modal-form__title {
+    margin-top: 10px;
+  }
+  .modal-form-call__phone {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .modal-offer-item__img {
+    display: none;
+  }
+  .modal-offer-item__title:after {
+    margin-top: 2px;
+    margin-bottom: 4px;
   }
 }
 

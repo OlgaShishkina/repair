@@ -7,6 +7,7 @@
 @media (max-width: 1300px)
   .main img 
     transform: scale(1)
+
 @media (max-width: 1199px)
   .container
     width: 970px
@@ -23,7 +24,7 @@
       img
         max-width: 95% 
   .main-text__title
-    margin-top: 0
+    margin-top: 10px
   .portfolio
     background: $light-bg-color 
     //&:before
@@ -67,20 +68,46 @@
     position: relative
   .feedback 
     background: #ffffff 
+    &:before
+      width: 65%
   .form 
     margin: 0 auto 
     &-feedback__title 
       text-align: center  
   .steps-cheap__container
     width: 970px
+  .steps-arrow 
+    display: none
+  .modal-form 
+    width: 600px
+  .modal-form-container
+    padding: 70px 0 55px 0 
+    width: 350px
+  .modal-offer
+    padding-top: 60px
+    width: 500px
+    height: 650px
+  .modal-form  
+    width: 500px
+    height: 650px 
+
 @media (max-width: 997px)
   .container 
-    width: 767px     
+    width: 730px 
   .main
-    &-text  
-      &__title
-        font-size: 30px
-        line-height: 36px
+    &-wrap
+      flex-direction: column
+      //margin: auto
+    &-text 
+      text-align: center
+      &-title 
+        text-align: center
+        margin: 0
+ 
+  .main-advantages 
+    margin: auto
+    margin-top: 20px
+    text-align: left 
   .feedback 
     background: #ffffff 
   .form  
@@ -145,10 +172,7 @@
         line-height: 20px
         margin-left: 7px
         margin-top: 7px 
-  .modal-form-container
-    padding: 70px 0 55px 0 
-  .modal-offer
-    padding-top: 60px
+ 
   .warranty
     &-wrap 
       flex-direction: column 
@@ -165,10 +189,11 @@
     &-wrap
       flex-direction: column
     &-text 
-      max-width: 400px
-      margin: auto
+      margin-top: 30px     
       &-title 
         text-align: center
+  .main-img 
+    margin-top: 43px     
   .form__item__phone
       text-align: center
   .form__item__text-1
@@ -225,6 +250,38 @@
         font-size: 16px
   .steps-cheap__container
     width: 570px
+  .modal-form
+    width: 420px
+    height: 600px
+  .modal-offer 
+    width: 420px
+    height: 600px
+    padding-top: 30px
+    padding-left: 20px
+  .modal-form-container
+    padding: 50px 0 50px 0
+    width: 350px
+  .modal-form__title
+    margin-bottom: 20px
+  .modal-form__subtitle
+    font-size: 16px
+    line-height: 35px
+    margin-bottom: 42px
+  .modal-form-input
+    width: 100%
+  .modal-form-input-1
+    width: 340px
+    padding: 22px
+  .modal-form-input-2
+    width: 340px
+    padding: 22px
+  .modal-form__button
+    width: 340px
+    margin-top: 0
+    padding: 22px
+  .modal-form-call__text
+    margin-top: 25px
+
 @media (max-width: 601px)
   .container
     width: 95%
@@ -293,11 +350,14 @@
      margin: 10px 0
   .main
     &-text
-      max-width: 300px
       margin: auto
+      margin-top: 25px
+      width: 400px
       &__title
-        text-align: center 
-        font-size: 24px
+        text-align: center       
+        font-size: 30px
+        line-height: 30px
+
   .main-text__title span
     font-size: 16 px
     display: 
@@ -328,7 +388,9 @@
     width: 470px
   .steps-cheap__text
     font-size: 24px
-    
+  .modal-form__button
+    margin-bottom: 0
+
 @media (max-width: 524px)
   .section-title_center
     padding: 25px
@@ -391,8 +453,46 @@
     font-size: 16px
     +bold 
     line-height: 30px
-
-
+  .modal-form-container 
+    padding: 10px 0 10px 0
+    width: 260px
+  .modal-form
+    width: 290px
+    height: 550px
+  .modal-offer 
+    width: 290px
+    height: 550px
+    padding-top: 10px
+    //padding-left: 10px
+  .modal-form-input-1
+    width: 100%
+    padding: 10px
+  .modal-form-input-2   
+    width: 100%
+    padding: 10px
+    margin-bottom: 10px
+  .modal-form__button
+    width: 100% 
+    padding: 10px 
+   
+  .modal-form__subtitle  
+    margin: auto
+    margin-bottom: 20px
+    width: 200px
+    font-size: 14px
+    line-height: 20px
+  .modal-form__title 
+    margin-top: 10px  
+  .modal-form-call__phone 
+    font-size: 22px
+    font-weight: 400
+    line-height: 22px
+  .modal-offer-item__img
+    display: none
+  .modal-offer-item__title:after 
+    margin-top: 2px
+    margin-bottom: 4px
+    
 @media (max-width: 400px)
   .header-logo 
     margin-bottom: 10px

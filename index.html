@@ -52,7 +52,7 @@
         <div class="main-text">
           <h1 data-wow-delay="0.2s" class="main-text__title wow fadeIn ">
             Внутренняя отделка помещений "под&nbsp;ключ"
-          <span>с гарантией качества, прописанной в&nbsp;договоре</span>
+          <span class="main-text__title-add" >с гарантией качества, прописанной в&nbsp;договоре</span>
           </h1>
             <div class="main-advantages">
               <div class="main-advantages__item">
@@ -68,15 +68,15 @@
                 </div>
               </div>  <!--/.main-advantages-item-->
               <div class="main-advantages__item">
-                  <div data-wow-delay="2s"  class="main-advantages__img  main-advantages__img-3  wow slideInRight"></div>
-                  <div data-wow-delay="1.6s"  class="main-advantages__text wow fadeInRight">
-                    Предложим более 100 вариантов исполнения дизайна Вашего жилья
-                  </div>
-                </div>  <!--/.main-advantages-item-->
+                <div data-wow-delay="2s"  class="main-advantages__img  main-advantages__img-3  wow slideInRight"></div>
+                <div data-wow-delay="1.6s"  class="main-advantages__text wow fadeInRight">
+                  Предложим более 100 вариантов исполнения дизайна Вашего жилья
+                </div>
+              </div>  <!--/.main-advantages-item-->
             </div> <!--/.main-advantages-->
         </div><!--/.main-text-->
         <div class="main-img">
-          <img src="img/main_photo.png" alt="main_photo">
+          <img src="img/main_photo.jpg" alt="main_photo">
         </div><!--/.main-img-->
       </div> <!--/.main-wrap-->
     </div><!--/.container-->
@@ -84,8 +84,9 @@
   <div class="feedback">
     <div class="container">
       <div class="form">
-        <div class="form-feedback__title">Мы бесплатно разработаем дизайн&nbsp;-проект
-        Вашего жилья и реализуем его!</div>
+        <div class="form-feedback__title">
+          Мы бесплатно разработаем дизайн&nbsp;-проект Вашего жилья и реализуем его!
+        </div>
         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн&nbsp;-&nbsp;проекта!</span> 
         <form action="mailer/smart.php" method="POST" class="js-ajax"> <!--  был class form-input-->
         <input type="text" name="fio" class="input  user_name form__input-1" placeholder="Ваше имя" required>
@@ -94,7 +95,7 @@
         </form> 
         <div class="form__item">
           <div class="form__item__text form__item__text-1 ">
-                    Наш менеджер перезвонит Вам в&nbsp;течение&nbsp;60&nbsp;секунд
+            Наш менеджер перезвонит Вам в&nbsp;течение&nbsp;60&nbsp;секунд
           </div>
           <div data-wow-delay="1s"
                data-wow-iteration="10"
@@ -262,21 +263,7 @@
 <!--prevArrow: null,
     nextArrow: null -->
     
-  <div class="thank"> <!-- начало модального окна благодарности-->
-    <div class="thank-dialog"> <!-- окошко посередине-->
-      <div class="thank-wrap "> <!-- обертка для окошка в  модальном  окне --> 
-      <div class="thank-block">        
-      <div class="thank-title"> <!--заголовок 1-->
-        Большое спасибо!
-      </div>
-      <div class="thank-subtitle"> <!-- заголовок 2-->
-        Ваша заявка принята.
-      </div>    
-        <button type="submit" class="button thank__button" >ОК</button> 
-      </div> <!-- thank-block-->    
-      </div><!--thank-wrap-->  
-    </div> <!--thank__dialog-->
-  </div><!--thank-->
+  
   <div class="modal" id="modal-callback"> <!-- начало модального окна-->
     <div class="modal__dialog"> <!-- окошко посередине-->
       <div class="modal__close">&#10006;</div><!--./close--> <!--крестик сверху слева-->
@@ -338,19 +325,19 @@
       </div> <!-- modal-offer   часть слева закончилась-->
       <div class="modal-form"> <!--часть справа-->
         <div class="modal-form-container">
-        <h2 class="form__title">Узнайте точную стоимость<br>ремонта по телефону!</h2>
-        <span class="form__subtitle">Заполните поля ниже&nbsp;- мы свяжемся с Вами</span> 
-        <form action="mailer/smart.php" method="POST" class="form-input">
-          <input type="text" name="fio" class="input  user_name form-input-1" placeholder="Ваше имя" required>
-          <input type="tel" name="phone" class="input phone user_phone  form-input-2" placeholder="Ваш телефон" required>
-          <button type="submit" class="button  form__button" >Узнать стоимость</button>
+        <h2 class="modal-form__title">Узнайте точную стоимость<br>ремонта по телефону!</h2>
+        <span class="modal-form__subtitle">Заполните поля ниже&nbsp;- мы свяжемся с Вами</span> 
+        <form action="mailer/smart.php" method="POST" class="modal-form-input">
+          <input type="text" name="fio" class="input  user_name modal-form-input-1" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" class="input phone user_phone  modal-form-input-2" placeholder="Ваш телефон" required>
+          <button type="submit" class="button  modal-form__button" >Узнать стоимость</button>
         </form>  <!-- это форма для ввода-->
         <div class="modal-form-call"> <!--это блок внизу под формой ввода-->
           <div class="modal-form-call__text">
               или Вы можете перезвонить нам<br>сами  по телефону:
           </div> <!--modal-form-call__text-->
           <div class="modal-form-call__phone">
-            <a   data-wow-delay="0.4s"
+            <a   
             data-wow-iteration="10"
             class="modal-form-call__phone wow pulse" 
             href="tel:+74954225131">
@@ -375,6 +362,22 @@
     });  
   </script> 
   
+  <div class="thank"> <!-- начало модального окна благодарности-->
+    <div class="thank-dialog"> <!-- окошко посередине-->
+      <div class="thank-wrap "> <!-- обертка для окошка в  модальном  окне --> 
+      <div class="thank-block">        
+      <div class="thank-title"> <!--заголовок 1-->
+        Большое спасибо!
+      </div>
+      <div class="thank-subtitle"> <!-- заголовок 2-->
+        Ваша заявка принята.
+      </div>    
+        <button type="submit" class="button thank__button" >ОК</button> 
+      </div> <!-- thank-block-->    
+      </div><!--thank-wrap-->  
+    </div> <!--thank__dialog-->
+  </div><!--thank-->
+
   <div class="calculation"> <!-- создала новую секцию-->
     <div class="calculation-container container">
     <!-- это обертка для этой секции для ограничения контента и выравнивания его по центру-->
