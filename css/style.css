@@ -471,7 +471,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 350px;
+  max-width: 330px;
   margin-top: 52px;
 }
 
@@ -1872,13 +1872,19 @@ img {
             flex-direction: column;
   }
   .main-text {
-    margin-top: 30px;
+    margin-top: 10px;
+    margin: auto;
+    margin-max-width: 400px;
   }
-  .main-text-title {
+  .main-text__title {
     text-align: center;
+    font-size: 35px;
   }
   .main-img {
     margin-top: 43px;
+  }
+  .main-text__title-add {
+    margin-top: 20px;
   }
   .form__item__phone {
     text-align: center;
@@ -2109,16 +2115,16 @@ img {
   .main-text {
     margin: auto;
     margin-top: 25px;
-    width: 400px;
+    max-width: 300px;
   }
   .main-text__title {
     text-align: center;
     font-size: 30px;
     line-height: 30px;
   }
-  .main-text__title span {
+  .main-text__title-add {
     font-size: 16 px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .form__input-1 {
     margin-right: 30px;
@@ -2162,6 +2168,22 @@ img {
   .modal-form__button {
     margin-bottom: 0;
   }
+  .thank-dialog {
+    max-width: 410px;
+    height: 220px;
+  }
+  .thank__button {
+    height: 65px;
+    width: 330px;
+  }
+  .thank-title {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  .thank-subtitle {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 524px) {
@@ -2172,6 +2194,9 @@ img {
   .steps {
     padding-top: 50px;
     padding-bottom: 0;
+  }
+  .price {
+    padding: 10px 0;
   }
 }
 
@@ -2200,6 +2225,9 @@ img {
   }
   .calculation-text {
     width: 400px;
+  }
+  .portfolio {
+    padding-top: 10px;
   }
   .contacts__title {
     margin: 50px;
@@ -2290,6 +2318,20 @@ img {
     margin-top: 2px;
     margin-bottom: 4px;
   }
+  .thank-dialog {
+    max-width: 350px;
+    height: 200px;
+  }
+  .thank__button {
+    height: 60px;
+    width: 300px;
+  }
+  .thank-title {
+    font-size: 24px;
+  }
+  .thank-subtitle {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -2297,14 +2339,17 @@ img {
     margin-bottom: 10px;
   }
   .main {
-    padding: 25px 0;
+    padding: 5px 0;
+  }
+  .main-text {
+    margin-top: 5px;
   }
   .main-text__title {
     line-height: 30px;
     font-size: 22px;
     margin-bottom: 30px;
   }
-  .main-text__title span {
+  .main-text__title-add {
     font-size: 18px;
     line-height: 24px;
   }
@@ -2343,7 +2388,7 @@ img {
     font-size: 18px;
   }
   .portfolio {
-    padding-top: 20px;
+    padding-top: 5px;
   }
   .calculation__input-1 {
     width: 100%;
@@ -2352,6 +2397,7 @@ img {
   .calculation__input-2 {
     width: 100%;
     height: 55px;
+    margin-bottom: 0;
   }
   .calculation__button {
     width: 100%;
@@ -2463,7 +2509,7 @@ img {
     height: 14px;
   }
   .price {
-    padding: 10px 0;
+    padding: 5px 0;
   }
   .form__item__img-4 {
     display: none;
@@ -2475,14 +2521,21 @@ img {
   .steps-cheap__container {
     width: 300px;
   }
-  /*  border-radius: 50%*/
-  /*  border: 2px solid $item-phone*/
-  /*  background-image: url('../img/phone-receiver.png')   */
-  /*  background-repeat: no-repeat*/
-  /*  background-position: center*/
-  /* background-color: #ffffff*/
-  /*  background-size: 20px */
-  /*.header-text__button-2 */
-  /*  display: none*/
+  .thank-dialog {
+    max-width: 310px;
+    height: 190px;
+  }
+  .thank__button {
+    height: 55px;
+    width: 200px;
+  }
+  .thank-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .thank-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
