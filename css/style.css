@@ -1874,7 +1874,7 @@ img {
   .main-text {
     margin-top: 10px;
     margin: auto;
-    margin-max-width: 400px;
+    max-width: 400px;
   }
   .main-text__title {
     text-align: center;
