@@ -12,10 +12,11 @@
   .container
     width: 970px
     margin: auto
-  .form__title
-    text-align: center  
-  .form__subtitle
-    text-align: center
+  .form
+    &__title
+      text-align: center  
+    &__subtitle
+      text-align: center
   .slider
     margin-right: 20px 
     margin: auto
@@ -29,20 +30,21 @@
     background: $light-bg-color 
     //&:before
     //  display: none
-  .contacts__title
-    margin: 80px 10px 90px 90px
-    font-size: 20px
-    line-height: 30px
-  .contacts-items
-    margin-left: 99px
-  
-  .modal_visible  
-    overflow-y: auto 
-    //flex-direction: column
-  .modal__dialog
-    height: auto
-  .modal-wrap
-    flex-direction: column
+  .contacts
+    &__title
+      margin: 80px 10px 90px 90px
+      font-size: 20px
+      line-height: 30px
+    &-items
+      margin-left: 99px  
+  .modal
+    &_visible  
+      overflow-y: auto 
+      //flex-direction: column
+    &__dialog
+      height: auto
+    &-wrap
+      flex-direction: column
   .modal-offer
     order: 2
   .materials
